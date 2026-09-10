@@ -4,6 +4,8 @@ Earliest use: 2026-09-12 19:30 Europe/London.
 
 Do not send if Howleys replies, opts out, bounces, or the underlying pages no longer support the observation. Recheck `ops/SUPPRESSION.csv`, the complete Gmail thread, and all three public URLs first.
 
+Candidate attachment after successful revalidation: `outputs/howleys-cross-channel-qa-snapshot.pdf`. Regenerate it with `tools/build_howleys_snapshot_pdf.py` if any source fact changes, then render and inspect the revised PDF before use.
+
 Subject: One cross-channel Howleys title issue
 
 Hi Howleys team,
