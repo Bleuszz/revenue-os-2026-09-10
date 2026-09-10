@@ -80,3 +80,10 @@
 - Decision: Use the public Lane repository only as evidence that Nathan has built relevant technical tooling. Do not call it client work, social proof, a customer result, or evidence of conversion impact.
 - Reason: The repository is reachable and candid about external dependencies, but the outreach audit found no external customer outcome attached to it. Precise proof positioning protects trust without discarding relevant capability evidence.
 - Control: Any future proof link must be rechecked immediately before use and described according to what it directly demonstrates.
+
+## D-013 — Align automation with the 24-hour evidence gate
+
+- Date: 2026-09-10
+- Decision: Keep the four-hour continuation cadence but anchor it so the day-two critical run occurs at 19:36 BST, one minute after the primary observation gate.
+- Reason: The prior 19:31 BST occurrence was too early to activate the secondary path and would have deferred the next autonomous decision until 23:31. A five-minute shift removes that delay without consuming more runs.
+- Control: Do not treat the schedule as evidence. The 19:36 run must still inspect Gmail, bounces, suppression, and live prospect pages before any external action.

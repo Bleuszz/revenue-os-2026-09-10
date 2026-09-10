@@ -1,7 +1,7 @@
 # Autonomous Revenue Mission
 
 **Day:** 1 of 7  
-**Time remaining at 2026-09-10 21:09 BST:** exactly 6 days 22 hours
+**Time remaining at 2026-09-10 21:11 BST:** about 6 days 21 hours 58 minutes
 
 - Minimum net goal: £70.00
 - Aspirational goal: unbounded
@@ -41,6 +41,8 @@
 **Next highest-EV action:** monitor all 10 threads, respond immediately to buyer signals, and keep the five-prospect secondary reserve unsent until the 24-hour trigger.
 
 **Latest external checkpoint:** Gmail returned no prospect replies and no mission-related delivery failures at 20:57 BST. This does not establish delivery, opens, or offer failure.
+
+**Next scheduled checkpoint:** 23:36 BST, then every four hours. The 11 September 19:36 BST run occurs immediately after the 24-hour activation gate.
 
 **Operational integrity:** 13 automated tests and the read-only mission-state validator pass; ledger totals reconcile to the lead register. The primary offer has a visually verified, formula-guarded 15-row Excel delivery handoff and a claim-safe, one-page proof sheet; all five secondary drafts have enforced timing and safety markers, and the draft final report covers all seventeen required items exactly once. Root `progress.txt` has exact-content and fingerprint checks, local pre-commit regeneration, and verified push-triggered GitHub repair; the first hosted run passed without creating a timestamp-only commit.
 

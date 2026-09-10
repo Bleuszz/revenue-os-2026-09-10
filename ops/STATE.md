@@ -1,6 +1,6 @@
 # Mission State
 
-Last updated: 2026-09-10 21:09 Europe/London
+Last updated: 2026-09-10 21:11 Europe/London
 
 ## Objective
 
@@ -33,6 +33,7 @@ Maximise legitimate verified net cash recovery by 2026-09-17 19:09 Europe/London
 - Sent-message integrity: all ten actual Gmail bodies were audited. Each uses a truthful sender identity, a fixed £99 scope, no-access fulfilment, a free-preview CTA, and an opt-out. The public Lane link is accessible technical capability evidence only; it is not client-outcome or social proof.
 - GitHub progress visibility: root `progress.txt` is generated from authoritative mission files and a tracked-content fingerprint. The configured pre-commit hook regenerates and stages it, then requires the unit suite and mission validator to pass. The first push-triggered GitHub run completed successfully in about eleven seconds, recognized the snapshot as current, passed all checks, and made no unnecessary bot commit.
 - Compute control: 10% of the weekly Codex allowance is consumed and 90% remains; no paid credits exist. Conservation is elevated after the reusable day-one setup, with routine Gmail checks batched on the four-hour heartbeat and no further speculative builds without a buyer signal or recorded threshold.
+- Continuation timing: the active four-hour heartbeat is anchored at 23:36 BST, so the critical day-two run lands at 19:36 BST on 11 September - one minute after the primary 24-hour decision gate rather than four minutes before it.
 
 ## Current portfolio
 
