@@ -1,0 +1,64 @@
+# Seven-Day Revenue OS
+
+Private operating repository for a seven-day, evidence-led revenue mission beginning 2026-09-10.
+
+## What the system does
+
+It keeps the commercial state, opportunity scoring, outreach evidence, experiments, risk controls, and cash ledger needed to test small legitimate offers and maximise verified net cash received within seven days.
+
+## Why it exists
+
+The mission must recover at least £70 net cash while risking no more than £30 of additional capital. Pipeline and promises never count as cash.
+
+## How to run it
+
+1. Read `ops/STATE.md`.
+2. Read `ops/DASHBOARD.md` and `ops/NEXT_ACTIONS.md`.
+3. Execute the highest expected-value unblocked action.
+4. Record evidence in `ops/EXPERIMENTS.md`, `ops/LEADS.csv`, and `ops/MISSION_LOG.md`.
+5. Update `ops/FINANCE.md` only from verifiable payment or expense evidence.
+
+## Requirements
+
+- Git
+- Web access for current research
+- An authorised communication channel for outreach
+- A legitimate payment method before accepting an order
+- Optional local scripting tools only when repeatable fulfilment justifies them
+
+## Environment variables
+
+No environment variables are required at present. Secrets must remain outside Git. If code later needs configuration, document placeholders in `.env.example`.
+
+## Architecture
+
+- `ops/`: durable commercial state and evidence
+- `docs/`: research and customer-facing working documentation
+- `scripts/`: deterministic utilities added only when they save more time than they cost
+
+## Operating procedure
+
+Use manual-first demand tests, contact a small number of highly relevant business prospects, provide concrete value in the first message, fulfil paid work before speculative building, and reallocate effort from observed outcomes.
+
+## Tests
+
+No software has been built yet. Any later code must include proportionate automated or reproducible verification.
+
+## Deployment
+
+No deployment exists. A website will be created only if it materially improves conversion.
+
+## Known limitations
+
+- No payment connector is available in the current tool environment.
+- No sale, payment, customer, testimonial, traffic, or conversion result exists at mission start.
+- Cold outreach must use relevant public business channels, honest identity, low volume, and a clear opt-out.
+
+## Security notes
+
+Do not commit credentials, verification codes, customer-sensitive data, inbox contents, or payment details. Store the minimum information required to operate.
+
+## Current mission status
+
+Day 1. Environment audited; opportunity research and offer selection are in progress. Verified cash received: £0.00.
+
