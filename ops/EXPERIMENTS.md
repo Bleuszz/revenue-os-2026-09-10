@@ -62,3 +62,12 @@
 - Expected result: current demand evidence plus a working, tested fulfilment scaffold and a bounded direct-sale offer.
 - Actual result: Verified a live $900 fixed-price brief for about 180 Shopify products and dozens of other current marketplace listing/copy projects. Created a £399/25-product pilot, £799 conditional expansion, deterministic CSV validation/draft tool, three-product fictional proof set, human-review Markdown report, and seven automated tests. The demonstration covers clean input, missing optional source fields, and a prohibited-claim failure without inventing facts. No marketplace account, application, contact, quote, or pipeline value was created.
 - Decision: Promote the catalogue workflow to the asymmetric slot and move Lane onboarding to reserve. Activate only on explicit large-catalogue pain; do not use an ID-dependent marketplace during this mission.
+
+## E-007 — Cross-channel value-led follow-up readiness
+
+- Hypothesis: A concise follow-up containing a new cross-channel product-data finding will create more buyer value than merely repeating the original £99 offer.
+- Cost: £0
+- Time: about 15 minutes of current public-page verification and preparation
+- Expected result: if still appropriate at the 48-hour gate, a revalidated Howleys follow-up earns a meaningful reply within the following 48 hours.
+- Actual result: The same misspelt title appears on Howleys' own store and a live OnBuy offer sold by Howleys with matching EAN/MPN, while both descriptions use the correct spelling. A separate incomplete eBay title remains live and was revised on 2026-09-10. Prepared an evidence-linked QA snapshot and follow-up text; neither was sent. The shared-source explanation remains an inference requiring seller confirmation.
+- Decision: Hold until at least 2026-09-12 19:30 BST. Before any send, inspect the full thread and suppression list and revalidate all pages. Discard the follow-up if there is a reply, opt-out, bounce, correction, or weaker evidence. No quote, agreement, or pipeline value was added.

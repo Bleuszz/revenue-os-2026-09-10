@@ -1,7 +1,7 @@
 # Autonomous Revenue Mission
 
 **Day:** 1 of 7  
-**Time remaining at 2026-09-10 20:06 BST:** about 6 days 23 hours 3 minutes
+**Time remaining at 2026-09-10 20:10 BST:** about 6 days 22 hours 59 minutes
 
 - Minimum net goal: £70.00
 - Aspirational goal: unbounded
@@ -36,7 +36,7 @@
 
 **Current bottleneck:** reply and trust generation. The ID-free payment plan is ready, but direct-transfer details and PayPal usability remain intentionally uncollected until buyer intent exists.
 
-**Most important evidence learned:** 10 current corporate seller catalogues support specific value-first outreach, and live marketplace briefs independently show demand for bulk listing/copy workflows; the observation window is still too short to infer direct-channel conversion.
+**Most important evidence learned:** 10 current corporate seller catalogues support specific value-first outreach; one Howleys title issue is visible on two channels with matching product identifiers, and live marketplace briefs independently show demand for bulk listing/copy workflows. The observation window is still too short to infer direct-channel conversion.
 
 **Next highest-EV action:** monitor all 10 threads, respond immediately to buyer signals, and keep the five-prospect secondary reserve unsent until the 24-hour trigger.
 

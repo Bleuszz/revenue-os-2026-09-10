@@ -1,6 +1,6 @@
 # Mission State
 
-Last updated: 2026-09-10 20:06 Europe/London
+Last updated: 2026-09-10 20:10 Europe/London
 
 ## Objective
 
@@ -22,6 +22,7 @@ Maximise legitimate verified net cash recovery by 2026-09-17 19:09 Europe/London
 - Outreach: 10 tailored messages sent; delivery, opens, and replies not yet observed
 - Payment route: direct UK bank transfer after buyer agreement; an existing usable PayPal account is a conditional fallback; Stripe is inactive
 - Buyer conversion readiness: positive-reply, preview, agreement, bank-transfer, PayPal-invoice, and payment-evidence templates are prepared without embedded financial details
+- Follow-up readiness: an evidence-linked Howleys cross-channel QA snapshot and message are saved locally but remain unsent until revalidation at the 48-hour gate
 
 ## Current portfolio
 

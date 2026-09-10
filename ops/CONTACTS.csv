@@ -4,7 +4,7 @@ C-002,L-002,2026-09-10T19:22:00+01:00,Gmail,outbound,A concrete title + item-spe
 C-003,L-003,2026-09-10T19:22:00+01:00,Gmail,outbound,Three catalogue QA opportunities I spotted on FullyRetro,sent,gmail:1a08c8e5f2e2424b,Check for reply; follow up once on 2026-09-12 if no opt-out,false
 C-004,L-006,2026-09-10T19:30:00+01:00,Gmail,outbound,A duplicated Voodoo Vixen eBay title I spotted,sent,gmail:1a08c95be58b39f1,Check for reply; follow up once on 2026-09-12 if no opt-out,false
 C-005,L-007,2026-09-10T19:30:00+01:00,Gmail,outbound,Three catalogue consistency fixes for Pizzazz Retail,sent,gmail:1a08c95c05a63d6b,Check for reply; follow up once on 2026-09-12 if no opt-out,false
-C-006,L-008,2026-09-10T19:30:00+01:00,Gmail,outbound,Three current eBay title fixes for Howleys,sent,gmail:1a08c95c52a862f8,Check for reply; follow up once on 2026-09-12 if no opt-out,false
+C-006,L-008,2026-09-10T19:30:00+01:00,Gmail,outbound,Three current eBay title fixes for Howleys,sent,gmail:1a08c95c52a862f8,"At or after 2026-09-12 19:30, recheck the thread, suppression list, and public evidence before considering the saved cross-channel follow-up",false
 C-007,L-012,2026-09-10T19:30:00+01:00,Gmail,outbound,Two current title QA fixes for Simply Toys,sent,gmail:1a08c95c79dc426c,Check for reply; follow up once on 2026-09-12 if no opt-out,false
 C-008,L-009,2026-09-10T19:35:00+01:00,Gmail,outbound,Three catalogue consistency fixes for ROCKTHOSECURVES,sent,gmail:1a08c9a7a92b50de,Check for reply; follow up once on 2026-09-12 if no opt-out,false
 C-009,L-010,2026-09-10T19:35:00+01:00,Gmail,outbound,Three eBay catalogue consistency fixes for G5 Apparel,sent,gmail:1a08c9a7c1369e69,Check for reply; follow up once on 2026-09-12 if no opt-out,false

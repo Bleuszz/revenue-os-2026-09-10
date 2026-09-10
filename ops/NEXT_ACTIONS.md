@@ -26,13 +26,13 @@ Scales: value in expected seven-day net cash; probability 0–1; time in operato
    - Compute: Medium
    - Dependencies: 24-hour primary checkpoint or stronger contrary evidence; no buyer reply requiring immediate fulfilment
 
-4. At the 24-hour checkpoint, inspect response/bounce evidence and either send one evidence-led follow-up later at 48 hours, refine the message/channel, or activate the secondary offer.
+4. At the 24-hour checkpoint, inspect response/bounce evidence and either schedule the saved Howleys cross-channel follow-up for revalidation at 48 hours, refine the message/channel, or activate the secondary offer.
    - Value if successful: protects deliverability and improves conversion learning
    - Probability: conditional on evidence
    - Time: 20 minutes
    - Money: £0
    - Compute: Medium
-   - Dependencies: adequate observation window
+   - Dependencies: adequate observation window; for Howleys, recheck `docs/followups/howleys-48h.md`, the full Gmail thread, `ops/SUPPRESSION.csv`, and every cited page before sending
 
 5. On buyer agreement, offer UK bank transfer first and PayPal invoice only if an existing account is already usable without document verification or a hold that extends beyond the deadline.
    - Value if successful: converts an agreed £99 or £149 service into accessible cash without an ID-dependent signup
