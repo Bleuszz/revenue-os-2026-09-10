@@ -10,10 +10,9 @@ Source checked 2026-09-10: https://www.ebay.co.uk/str/elfontheshelfukadoptionsit
 
 ## Example corrections
 
-- `The Elf on the Shelf Polar Props 24-Day Ideas Kit – New/Unused, Ex Display`
+- `The Elf on the Shelf Polar Props 24-Day Ultimate Ideas Kit – New/Unused, Ex Display`
 - `The Elf on the Shelf® Tangled Twistmas Card Game`
 
 ## QA boundary
 
 The repeated damaged-box entries may represent separate stock records; confirm before consolidating or changing them.
-

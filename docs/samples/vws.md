@@ -16,9 +16,9 @@ Sources checked 2026-09-10:
 
 ## Example title
 
-`10x Men's Vintage Festival Shorts Job Lot Bright Mixed Prints Wholesale`
+`10x [Confirm buyer category] Vintage Festival Shorts Job Lot Bright Mixed Prints Wholesale`
 
-The word `Men's` is an assumption based on the visible `ME SHORTS` text and must be confirmed before use.
+If the seller confirms that `ME SHORTS` means `MEN'S SHORTS`, replace the placeholder with `Men's`. Do not resolve the truncated source text by assumption.
 
 ## QA flags
 
@@ -26,4 +26,3 @@ The word `Men's` is an assumption based on the visible `ME SHORTS` text and must
 - Move the internal `(52)` reference to a SKU field if it is not useful to buyers.
 - Normalise job-lot syntax and capitalisation across the catalogue.
 - Preserve the wear disclaimer and add verified lot-level sizing/brand distribution where available.
-

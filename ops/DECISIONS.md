@@ -59,3 +59,10 @@
 - Reason: Nathan cannot supply photo ID. Stripe live activation is blocked on ID/selfie, while PayPal states that new or inactive seller funds may be held for up to 21 days and identity confirmation can be required. Direct transfer avoids a new intermediary and has the best chance of accessible cash before the deadline.
 - Controls: Never store bank details in Git; verify receipts inside the real account; never accept screenshots as proof; do not use PayPal friends-and-family for a commercial service; record actual fees and holds.
 - Revisit when: A buyer cannot use bank transfer and Nathan confirms an existing PayPal account is currently able to receive and release commercial funds without ID.
+
+## D-010 — Separate product facts from storefront identity
+
+- Date: 2026-09-10
+- Decision: Never infer a product's brand, model, specification, colour, size, or compatibility from the seller's storefront name or from a third-party retailer. Use the seller's own item specifics or buyer-approved source data; otherwise keep a visible confirmation placeholder.
+- Reason: A quality audit found that the local Voodoo Vixen sample had inserted the storefront brand into a product title even though third-party records attribute that product name to Jawbreaker. The sent email described only the observed duplication and contained no proposed brand or rewritten title, so the unsupported inference did not reach the prospect.
+- Control: Treat third-party product pages as leads for verification, not authoritative replacement data. Preserve every unaffected source term when making a narrow correction, and use visible placeholders for ambiguous text. Keep the Voodoo follow-up unprepared until the exact seller listing or a buyer-approved source confirms the brand.

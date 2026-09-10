@@ -80,3 +80,12 @@
 - Expected result: if still appropriate at the 48-hour gate, a revalidated Pizzazz follow-up earns a meaningful reply within the following 48 hours.
 - Actual result: Tesco and B&Q pages sold by Pizzazz use `Reachargeable` in the MotionGlo title, B&Q repeats it on a separate FlexiGlo product, and the matching MotionGlo EAN on eBay uses a correctly spelt but different title. Prepared an evidence-linked QA snapshot and follow-up text; neither was sent. The marketplace-feed explanation remains an inference requiring seller confirmation.
 - Decision: Hold until at least 2026-09-12 19:30 BST. Before any send, inspect the full thread and suppression list and revalidate every page. Discard the follow-up if there is a reply, opt-out, bounce, correction, or weaker evidence. No quote, agreement, or pipeline value was added.
+
+## E-009 — Prospect-sample factual QA audit
+
+- Hypothesis: Every saved preview can maintain a strict boundary between observed seller data, third-party clues, and facts requiring buyer confirmation.
+- Cost: £0
+- Time: about 10 minutes
+- Expected result: no unsupported product fact remains in a sample that could later be sent to a prospect.
+- Actual result: Audited all ten primary preview files. Corrected three saved-sample defects: the Voodoo Vixen sample had inferred a product brand from the storefront; the Vintage Wholesale Store sample had expanded an ambiguous `ME` fragment to `Men's`; and the Simply Toys sample had unnecessarily dropped `Ultimate` while correcting a different typo. Each saved sample now preserves the source or uses a visible confirmation placeholder. Direct inspection confirmed the Voodoo and Simply Toys emails contained no rewritten title; the VWS email did contain the `Men's` example but explicitly prefaced it with `after confirming that Men's is correct`, so it was conditional rather than asserted as fact.
+- Decision: Do not prepare a Voodoo follow-up from third-party brand evidence alone. No corrective VWS email is warranted because its example was explicitly conditional; any future VWS material must use the saved confirmation placeholder. Require seller item specifics or buyer-approved data before inserting a brand or other product fact, preserve unaffected source wording when correcting a narrow defect, and apply these controls to every future preview.

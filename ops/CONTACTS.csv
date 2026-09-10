@@ -1,5 +1,5 @@
 contact_id,lead_id,datetime,channel,direction,subject_or_summary,status,evidence_reference,next_action,opt_out
-C-001,L-001,2026-09-10T19:22:00+01:00,Gmail,outbound,Three concrete eBay listing fixes for VWS,sent,gmail:1a08c8e5c2f5bd96,Check for reply; follow up once on 2026-09-12 if no opt-out,false
+C-001,L-001,2026-09-10T19:22:00+01:00,Gmail,outbound,Three concrete eBay listing fixes for VWS,sent,gmail:1a08c8e5c2f5bd96,"Check reply; any later follow-up must use a visible confirmation placeholder for the ambiguous buyer category",false
 C-002,L-002,2026-09-10T19:22:00+01:00,Gmail,outbound,A concrete title + item-specific fix for one STARTOYS listing,sent,gmail:1a08c8e610e4214b,Check for reply; follow up once on 2026-09-12 if no opt-out,false
 C-003,L-003,2026-09-10T19:22:00+01:00,Gmail,outbound,Three catalogue QA opportunities I spotted on FullyRetro,sent,gmail:1a08c8e5f2e2424b,Check for reply; follow up once on 2026-09-12 if no opt-out,false
 C-004,L-006,2026-09-10T19:30:00+01:00,Gmail,outbound,A duplicated Voodoo Vixen eBay title I spotted,sent,gmail:1a08c95be58b39f1,Check for reply; follow up once on 2026-09-12 if no opt-out,false
