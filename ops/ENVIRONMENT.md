@@ -23,6 +23,7 @@ Audited: 2026-09-10 19:15 Europe/London
 | Codex usage | AVAILABLE | Weekly bucket 1% used; no paid credits at audit |
 | Available task models | AVAILABLE | Host exposes GPT-6 Astra, GPT-5.6 Sol, GPT-5.6 Terra, GPT-5.6 Luna, GPT-5.5, and GPT-5.3-Codex-Spark with model-specific reasoning levels |
 | Additional capital | AVAILABLE | £30 maximum; £0 spent |
+| Continuation heartbeat | ACTIVE | `seven-day-revenue-mission`; resumes about every four hours through the deadline and stays quiet when nothing actionable changes |
 
 ## Constraints
 
@@ -30,4 +31,3 @@ Audited: 2026-09-10 19:15 Europe/London
 - External revenue requires a real buyer and a user-owned way to accept payment.
 - No new account has been created.
 - No credentials, mailbox content, or tokens are stored in this repository.
-

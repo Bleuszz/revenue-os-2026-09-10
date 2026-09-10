@@ -60,5 +60,4 @@ Do not commit credentials, verification codes, customer-sensitive data, inbox co
 
 ## Current mission status
 
-Day 1. Environment audited; opportunity research and offer selection are in progress. Verified cash received: £0.00.
-
+Day 1. Twenty-seven strategies scored, primary offer live, 12 leads researched and seven tailored messages sent. Verified cash received: £0.00; spend: £0.00; signed work: £0.00. See `ops/DASHBOARD.md` for the current pipeline and next action.

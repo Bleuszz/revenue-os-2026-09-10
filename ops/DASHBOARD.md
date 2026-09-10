@@ -1,7 +1,7 @@
 # Autonomous Revenue Mission
 
 **Day:** 1 of 7  
-**Time remaining at 2026-09-10 19:15 BST:** about 6 days 23 hours 54 minutes
+**Time remaining at 2026-09-10 19:30 BST:** about 6 days 23 hours 39 minutes
 
 - Minimum net goal: £70.00
 - Aspirational goal: unbounded
@@ -14,29 +14,33 @@
 - Shortfall to minimum: £70.00
 - Pending revenue: £0.00
 - Signed/agreed work: £0.00
-- Pipeline value: £0.00
-- Probability-weighted pipeline: £0.00
+- Pipeline value: £693.00 nominal; no replies yet
+- Probability-weighted pipeline: £69.30 provisional estimate
 
 ## Active strategies
 
-1. Primary: pending opportunity score
-2. Secondary: pending opportunity score
-3. Asymmetric experiment: pending opportunity score
-4. Emergency fallback: pending opportunity score
+1. Primary: £99 e-commerce listing rescue sprint — live test
+2. Secondary: £149 landing-page conversion patch — held until pivot trigger
+3. Asymmetric experiment: £59 Lane early-access onboarding — activate on explicit cross-listing pain
+4. Emergency fallback: sell verified user-owned inventory on eBay — requires inventory/photos
 
 ## Funnel
 
-- Leads: 0
-- Contacted: 0
+- Leads: 12
+- Contacted: 7
 - Replies: 0
-- Qualified: 0
+- Qualified: 7 cumulative
 - Customers: 0
 - Conversion rate: UNKNOWN
 
-**Current bottleneck:** a narrow offer with an urgent buyer and a verified payment route has not yet been selected.  
-**Most important evidence learned:** the mission can research, build, host, use GitHub, and send authorised Gmail at £0 additional cost; payment collection still needs a user-owned route.  
-**Next highest-EV action:** score 20 materially different opportunities using current channel, trust, time-to-cash, and fulfilment evidence.  
-**Compute status:** healthy  
-**Model:** GPT-6 Astra  
-**Compute conservation level:** normal/batched
+**Current bottleneck:** reply and trust generation; the user-owned payment route is still unverified.
 
+**Most important evidence learned:** active UK corporate eBay sellers expose specific catalogue QA gaps that can be demonstrated before purchase; seven messages have been sent but delivery and buyer interest remain UNKNOWN.
+
+**Next highest-EV action:** monitor all seven threads, strengthen three researched prospects into preview-ready leads, and stop expanding the primary batch at 10 sends if it still has no engagement.
+
+**Compute status:** healthy
+
+**Model:** GPT-6 Astra
+
+**Compute conservation level:** normal/batched

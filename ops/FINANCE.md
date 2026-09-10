@@ -24,8 +24,9 @@ No revenue.
 
 - Pending payments: £0.00
 - Signed/agreed work: £0.00
-- Pipeline: £0.00
-- Probability-weighted pipeline: £0.00
+- Pipeline: £693.00 nominal across seven unresponded offers
+- Probability-weighted pipeline: £69.30 using a provisional 10% per-lead sale weight
 
 Only verified settled or accessible cash from an external customer counts as cash received.
 
+The pipeline figures are estimates only. There is no reply, agreement, invoice, pending payment or customer.

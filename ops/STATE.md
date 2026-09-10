@@ -1,6 +1,6 @@
 # Mission State
 
-Last updated: 2026-09-10 19:15 Europe/London
+Last updated: 2026-09-10 19:30 Europe/London
 
 ## Objective
 
@@ -9,7 +9,7 @@ Maximise legitimate verified net cash recovery by 2026-09-17 19:09 Europe/London
 ## Current state
 
 - Day: 1 of 7
-- Phase: opportunity discovery and first-market-test preparation
+- Phase: live market test and qualified-pipeline expansion
 - Cash received: £0.00
 - Expenses: £0.00
 - Net cash recovery: £0.00
@@ -17,8 +17,23 @@ Maximise legitimate verified net cash recovery by 2026-09-17 19:09 Europe/London
 - Customers: 0
 - Pending payments: £0.00
 - Signed/agreed work: £0.00
-- Pipeline: £0.00
-- Selected strategy: pending scored research
+- Pipeline: £693.00 nominal / £69.30 probability-weighted (provisional)
+- Selected strategy: £99 e-commerce listing rescue sprint
+- Outreach: 7 tailored messages sent; delivery, opens, and replies not yet observed
+
+## Current portfolio
+
+- Primary: £99 e-commerce listing rescue — 15 titles, description improvements, and catalogue QA flags within 24 hours.
+- Secondary: £149 landing-page conversion patch.
+- Asymmetric: £59 Lane early-access onboarding when a prospect has explicit cross-listing pain.
+- Emergency: sell user-owned existing inventory on eBay if inventory and photographs are supplied.
+
+## Live experiment
+
+- Experiment E-001: three evidence-led corporate seller emails sent at 19:22 BST.
+- Experiment E-002: four additional evidence-led corporate seller emails sent at 19:30 BST.
+- Earliest checkpoint: monitor for replies or bounces; do not infer delivery or engagement.
+- Pivot threshold: revise the offer/message after 10 sends without engagement or 20 sends without a meaningful response.
 
 ## Verified capabilities
 
@@ -42,5 +57,4 @@ Maximise legitimate verified net cash recovery by 2026-09-17 19:09 Europe/London
 
 ## Resume instruction
 
-Read this file, then `DASHBOARD.md`, `NEXT_ACTIONS.md`, `DECISIONS.md`, and the latest entries in `MISSION_LOG.md`. Do not reread the entire chat.
-
+Read this file, then `DASHBOARD.md`, `NEXT_ACTIONS.md`, `DECISIONS.md`, and the latest entries in `MISSION_LOG.md`. Check the three tracked Gmail threads for replies or bounces before taking follow-up action. Do not reread the entire chat.
