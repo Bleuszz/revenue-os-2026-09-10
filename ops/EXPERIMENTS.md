@@ -125,3 +125,12 @@
 - Expected result: each qualified secondary prospect has one concise draft that can be revalidated rather than improvised, while no message can be mistaken for sent or used before the evidence gate.
 - Actual result: Created five individually tailored drafts, each containing a public-page observation, a first-pass hero, explicit fact-confirmation boundaries, the £149 scope, no-access positioning, and an opt-out. Every file is marked `UNSENT`, has an earliest-use time of 2026-09-11 19:35 Europe/London, and requires page, Gmail, corporate-channel, suppression, and portfolio checks. Added validator coverage and a negative regression test; all eleven tests pass. No email was sent and no quote or pipeline value was created.
 - Decision: Keep the drafts dormant. At the 24-hour checkpoint, decide whether secondary activation is justified; if so, revalidate and send only the strongest current subset rather than automatically using all five.
+
+## E-014 — Final-report evidence map
+
+- Hypothesis: Binding every required end-of-mission field to an explicit evidence source now will prevent retrospective inflation, missing evidence, and cash-versus-pipeline errors at the deadline.
+- Cost: £0
+- Time: about 10 minutes
+- Expected result: one living draft covers all seventeen mandated items and clearly marks current unknowns without pretending the mission is complete.
+- Actual result: Created `ops/FINAL_REPORT.md` with every required numbered section, the fixed deadline, current evidence snapshot, authoritative source routing, and explicit distinctions among market-attempted, prepared, rejected, pending, and realised states. Added validator and test coverage proving every heading occurs exactly once and the cleared-cash rule remains present. All twelve tests pass.
+- Decision: Update the draft only when evidence changes. Keep the draft marker until the fixed deadline and complete a requirement-by-requirement external and repository audit before issuing the final report.

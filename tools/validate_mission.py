@@ -31,6 +31,7 @@ REQUIRED_FILES = (
     "ops/DASHBOARD.md",
     "ops/OPPORTUNITIES.csv",
     "ops/SUPPRESSION.csv",
+    "ops/FINAL_REPORT.md",
     "docs/INVOICE_READINESS.md",
     "tools/build_listing_rescue_workbook.mjs",
 )
@@ -62,6 +63,26 @@ PRIMARY_PREVIEWS = (
     "vws.md", "startoys.md", "fullyretro.md", "voodoo-vixen.md",
     "pizzazz.md", "howleys.md", "simply-toys.md", "rockthosecurves.md",
     "g5-apparel.md", "retro-sweet-kings.md",
+)
+
+FINAL_REPORT_HEADINGS = (
+    "## 1. Gross cash received",
+    "## 2. Fees",
+    "## 3. Expenditure",
+    "## 4. Net cash recovery",
+    "## 5. Outstanding receivables",
+    "## 6. Customer count",
+    "## 7. Strategies attempted",
+    "## 8. Winning strategy",
+    "## 9. Losing strategies",
+    "## 10. Conversion funnel",
+    "## 11. Compute-management assessment",
+    "## 12. Code and repositories created",
+    "## 13. Assets created",
+    "## 14. Accounts created",
+    "## 15. Lessons",
+    "## 16. Next 30-day plan",
+    "## 17. Whether continued operation has positive expected value",
 )
 
 
@@ -244,6 +265,19 @@ def validate_repository(root: Path) -> list[str]:
         _compare_amount(quoted_total, _ledger_amount(text, "Pipeline", errors), "pipeline", errors)
         _compare_amount(expected_total, _ledger_amount(text, "Probability-weighted pipeline", errors), "weighted pipeline", errors)
         _compare_amount(reserve_total, _ledger_amount(text, "Uncontacted secondary reserve", errors), "secondary reserve", errors)
+
+    final_report = root / "ops/FINAL_REPORT.md"
+    if final_report.is_file():
+        text = final_report.read_text(encoding="utf-8")
+        if "— DRAFT" not in text:
+            errors.append("FINAL_REPORT.md: living report must remain marked DRAFT before the deadline")
+        if "2026-09-17 19:09 Europe/London" not in text:
+            errors.append("FINAL_REPORT.md: fixed mission deadline is missing")
+        for heading in FINAL_REPORT_HEADINGS:
+            if text.count(heading) != 1:
+                errors.append(f"FINAL_REPORT.md: expected exactly one heading {heading!r}")
+        if "Only cleared, accessible cash from an external customer counts" not in text:
+            errors.append("FINAL_REPORT.md: realised-cash evidence rule is missing")
 
     return errors
 

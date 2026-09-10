@@ -4,6 +4,7 @@ import unittest
 from pathlib import Path
 
 from tools.validate_mission import (
+    FINAL_REPORT_HEADINGS,
     OPPORTUNITY_COLUMNS,
     validate_followup,
     validate_opportunities,
@@ -44,6 +45,12 @@ class MissionValidationTests(unittest.TestCase):
         self.assertTrue(any("Earliest use" in error for error in errors))
         self.assertTrue(any("primary 24-hour review" in error for error in errors))
         self.assertTrue(any("SUPPRESSION" in error for error in errors))
+
+    def test_final_report_covers_all_required_sections_once(self):
+        text = (ROOT / "ops/FINAL_REPORT.md").read_text(encoding="utf-8")
+        self.assertEqual(len(FINAL_REPORT_HEADINGS), 17)
+        for heading in FINAL_REPORT_HEADINGS:
+            self.assertEqual(text.count(heading), 1, heading)
 
 
 if __name__ == "__main__":

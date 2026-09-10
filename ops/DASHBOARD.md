@@ -1,7 +1,7 @@
 # Autonomous Revenue Mission
 
 **Day:** 1 of 7  
-**Time remaining at 2026-09-10 20:45 BST:** about 6 days 22 hours 24 minutes
+**Time remaining at 2026-09-10 20:48 BST:** about 6 days 22 hours 21 minutes
 
 - Minimum net goal: £70.00
 - Aspirational goal: unbounded
@@ -40,7 +40,7 @@
 
 **Next highest-EV action:** monitor all 10 threads, respond immediately to buyer signals, and keep the five-prospect secondary reserve unsent until the 24-hour trigger.
 
-**Operational integrity:** 11 automated tests and the read-only mission-state validator pass; ledger totals reconcile to the lead register. The primary offer has a visually verified, formula-guarded 15-row Excel delivery handoff, and all five secondary drafts have enforced timing and safety markers.
+**Operational integrity:** 12 automated tests and the read-only mission-state validator pass; ledger totals reconcile to the lead register. The primary offer has a visually verified, formula-guarded 15-row Excel delivery handoff, all five secondary drafts have enforced timing and safety markers, and the draft final report covers all seventeen required items exactly once.
 
 **Compute status:** healthy
 

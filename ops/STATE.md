@@ -1,6 +1,6 @@
 # Mission State
 
-Last updated: 2026-09-10 20:45 Europe/London
+Last updated: 2026-09-10 20:48 Europe/London
 
 ## Objective
 
@@ -28,6 +28,7 @@ Maximise legitimate verified net cash recovery by 2026-09-17 19:09 Europe/London
 - Fulfilment readiness: a visually verified 15-row Excel handoff for the £99 primary offer is generated from `tools/build_listing_rescue_workbook.mjs`. It tracks source facts, proposed copy, QA questions, fact review, buyer approval, and dynamic publish-readiness without containing prospect data.
 - Invoice readiness: an official-source-grounded UK bank-transfer invoice checklist and shell are prepared. Nathan's legal/address/VAT/bank fields remain absent and are requested only after buyer agreement; an issued invoice is pending, not cash.
 - Secondary launch readiness: five tailored £149 landing-page messages now provide a current-page observation and a public-fact hero. They are local and `UNSENT`, cannot be used before 2026-09-11 19:35 Europe/London, and require fresh page, Gmail, corporate-channel, and suppression checks before any send.
+- Final-report readiness: `FINAL_REPORT.md` maps all seventeen required items to current evidence and deadline checks. It remains explicitly a draft; undetermined outcomes, unlaunched strategies, pipeline, and cleared cash are not conflated.
 
 ## Current portfolio
 

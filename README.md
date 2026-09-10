@@ -17,6 +17,7 @@ The mission must recover at least £70 net cash while risking no more than £30 
 3. Execute the highest expected-value unblocked action.
 4. Record evidence in `ops/EXPERIMENTS.md`, `ops/LEADS.csv`, and `ops/MISSION_LOG.md`.
 5. Update `ops/FINANCE.md` only from verifiable payment or expense evidence.
+6. Maintain `ops/FINAL_REPORT.md` as a draft evidence map; remove its draft marker only after the fixed deadline and a full evidence audit.
 
 ## Requirements
 
