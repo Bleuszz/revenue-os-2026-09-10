@@ -18,13 +18,13 @@ Scales: value in expected seven-day net cash; probability 0–1; time in operato
    - Compute: Medium
    - Dependencies: prospect reply and listings
 
-3. Pre-qualify up to five secondary-offer prospects using the saved landing-page rubric, but do not contact them before the primary observation trigger.
-   - Value if successful: creates a ready day-2 or day-3 pipeline worth up to £745 nominal
-   - Probability: 0.05 per qualified contact is an untested planning estimate
-   - Time: 45 minutes
+3. Hold the five qualified secondary-offer prospects without contact until the primary observation trigger; recheck page evidence and prepare one rewritten hero immediately before any eventual send.
+   - Value if successful: preserves a ready day-2 or day-3 reserve worth up to £745 nominal without misclassifying it as pipeline
+   - Probability: 0.05 per eventual qualified contact is an untested planning estimate
+   - Time: 10 minutes at activation
    - Money: £0
    - Compute: Medium
-   - Dependencies: current public page evidence and no buyer reply requiring immediate fulfilment
+   - Dependencies: 24-hour primary checkpoint or stronger contrary evidence; no buyer reply requiring immediate fulfilment
 
 4. At the 24-hour checkpoint, inspect response/bounce evidence and either send one evidence-led follow-up later at 48 hours, refine the message/channel, or activate the secondary offer.
    - Value if successful: protects deliverability and improves conversion learning

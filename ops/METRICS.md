@@ -1,9 +1,9 @@
 # Metrics
 
-Last updated: 2026-09-10 19:35 Europe/London
+Last updated: 2026-09-10 19:45 Europe/London
 
-- Leads researched: 12
-- Leads qualified: 10 cumulative
+- Leads researched: 17
+- Leads qualified: 15 cumulative (10 contacted primary; 5 held secondary)
 - Prospects contacted: 10
 - Messages sent: 10
 - Messages delivered: UNKNOWN
@@ -16,7 +16,7 @@ Last updated: 2026-09-10 19:35 Europe/London
 - Cash payments: 0
 - Gross cash received: £0.00
 - Net cash recovery: £0.00
-- Contact-to-reply rate: 0% observed; no reply at the 19:33 checkpoint and too early to interpret
+- Contact-to-reply rate: 0% observed; no reply at the 19:39 checkpoint and too early to interpret
 - Reply-to-customer rate: UNKNOWN
 - Average order value: UNKNOWN
 - Fulfilment time: UNKNOWN

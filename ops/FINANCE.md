@@ -26,7 +26,8 @@ No revenue.
 - Signed/agreed work: £0.00
 - Pipeline: £990.00 nominal across ten unresponded offers
 - Probability-weighted pipeline: £99.00 using a provisional 10% per-lead sale weight
+- Uncontacted secondary reserve: £745.00 nominal across five qualified prospects; excluded from pipeline and probability-weighted totals
 
 Only verified settled or accessible cash from an external customer counts as cash received.
 
-The pipeline figures are estimates only. There is no reply, agreement, invoice, pending payment or customer.
+The pipeline and reserve figures are estimates only. There is no reply, agreement, invoice, pending payment or customer.

@@ -1,7 +1,7 @@
 # Autonomous Revenue Mission
 
 **Day:** 1 of 7  
-**Time remaining at 2026-09-10 19:40 BST:** about 6 days 23 hours 29 minutes
+**Time remaining at 2026-09-10 19:45 BST:** about 6 days 23 hours 24 minutes
 
 - Minimum net goal: £70.00
 - Aspirational goal: unbounded
@@ -26,10 +26,10 @@
 
 ## Funnel
 
-- Leads: 12
+- Leads: 17 researched (10 contacted primary; 5 held secondary)
 - Contacted: 10
 - Replies: 0
-- Qualified: 10 cumulative
+- Qualified: 15 cumulative
 - Customers: 0
 - Conversion rate: UNKNOWN
 
@@ -37,7 +37,7 @@
 
 **Most important evidence learned:** 10 current corporate seller catalogues supported specific value-first outreach, but the observation window is still too short to infer demand; live Payment Link creation remains gated by Stripe activation.
 
-**Next highest-EV action:** monitor all 10 threads, respond immediately to buyer signals, and pre-qualify a small secondary lead set without sending before the trigger.
+**Next highest-EV action:** monitor all 10 threads, respond immediately to buyer signals, and keep the five-prospect secondary reserve unsent until the 24-hour trigger.
 
 **Compute status:** healthy
 
