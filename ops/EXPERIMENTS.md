@@ -168,5 +168,5 @@
 - Cost: £0 cash; a few seconds of GitHub Actions runtime per substantive push.
 - Time: about 10 minutes
 - Expected result: current pushes create no timestamp-only commit; stale pushes regenerate only `progress.txt`, require the full test and validator gates, and then repair the remote snapshot.
-- Actual result: Added `--if-stale` exact-snapshot detection, validator coverage, and a constrained main-branch workflow with write access only to repository contents. It commits only `progress.txt`; any other validation failure stops the job rather than being hidden by an automated commit.
+- Actual result: Added `--if-stale` exact-snapshot detection, validator coverage, and a constrained main-branch workflow with write access only to repository contents. The first hosted run completed successfully in about eleven seconds, identified the file as current, ran all thirteen tests, passed mission validation, and made no bot commit. It commits only `progress.txt`; any other validation failure stops the job rather than being hidden by an automated commit.
 - Decision: Keep local pre-commit regeneration as the first line of defence and remote repair as the second. Monitor the first workflow run, retain a five-minute timeout, and disable the workflow if it produces unexpected commits or material Actions cost.

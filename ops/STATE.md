@@ -1,6 +1,6 @@
 # Mission State
 
-Last updated: 2026-09-10 21:07 Europe/London
+Last updated: 2026-09-10 21:09 Europe/London
 
 ## Objective
 
@@ -31,7 +31,7 @@ Maximise legitimate verified net cash recovery by 2026-09-17 19:09 Europe/London
 - Secondary launch readiness: five tailored £149 landing-page messages now provide a current-page observation and a public-fact hero. They are local and `UNSENT`, cannot be used before 2026-09-11 19:35 Europe/London, and require fresh page, Gmail, corporate-channel, and suppression checks before any send.
 - Final-report readiness: `FINAL_REPORT.md` maps all seventeen required items to current evidence and deadline checks. It remains explicitly a draft; undetermined outcomes, unlaunched strategies, pipeline, and cleared cash are not conflated.
 - Sent-message integrity: all ten actual Gmail bodies were audited. Each uses a truthful sender identity, a fixed £99 scope, no-access fulfilment, a free-preview CTA, and an opt-out. The public Lane link is accessible technical capability evidence only; it is not client-outcome or social proof.
-- GitHub progress visibility: root `progress.txt` is generated from authoritative mission files and a tracked-content fingerprint. The configured pre-commit hook regenerates and stages it, then requires the unit suite and mission validator to pass. A push-triggered GitHub workflow repairs a stale snapshot from web or unconfigured-clone changes only after all repository checks pass.
+- GitHub progress visibility: root `progress.txt` is generated from authoritative mission files and a tracked-content fingerprint. The configured pre-commit hook regenerates and stages it, then requires the unit suite and mission validator to pass. The first push-triggered GitHub run completed successfully in about eleven seconds, recognized the snapshot as current, passed all checks, and made no unnecessary bot commit.
 - Compute control: 10% of the weekly Codex allowance is consumed and 90% remains; no paid credits exist. Conservation is elevated after the reusable day-one setup, with routine Gmail checks batched on the four-hour heartbeat and no further speculative builds without a buyer signal or recorded threshold.
 
 ## Current portfolio
