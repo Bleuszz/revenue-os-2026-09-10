@@ -18,13 +18,13 @@ Scales: value in expected seven-day net cash; probability 0–1; time in operato
    - Compute: Medium
    - Dependencies: prospect reply and listings; use `docs/BUYER_CLOSE_KIT.md`, generate the clean workbook with `tools/build_listing_rescue_workbook.mjs`, and adapt the response to the actual thread. If the buyer agrees, use `docs/INVOICE_READINESS.md` before requesting bank payment.
 
-3. Hold the five qualified secondary-offer prospects without contact until the primary observation trigger; recheck page evidence and refresh the saved preliminary preview immediately before any eventual send.
+3. Hold the five qualified secondary-offer prospects without contact until the primary observation trigger; if activated, recheck page evidence, refresh the saved preview, and use the matching guarded draft only after every pre-send check passes.
    - Value if successful: preserves a ready day-2 or day-3 reserve worth up to £745 nominal without misclassifying it as pipeline
    - Probability: 0.05 per eventual qualified contact is an untested planning estimate
    - Time: 5–10 minutes per activated prospect
    - Money: £0
    - Compute: Medium
-   - Dependencies: 24-hour primary checkpoint or stronger contrary evidence; no buyer reply requiring immediate fulfilment
+   - Dependencies: 24-hour primary checkpoint or stronger contrary evidence; no buyer reply requiring immediate fulfilment; matching file in `docs/secondary_outreach/`; fresh Gmail and suppression checks
 
 4. At the 24-hour checkpoint, inspect response/bounce evidence and either schedule the saved Howleys and Pizzazz cross-channel follow-ups for revalidation at 48 hours, refine the message/channel, or activate the secondary offer.
    - Value if successful: protects deliverability and improves conversion learning

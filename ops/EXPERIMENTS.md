@@ -116,3 +116,12 @@
 - Expected result: a positive buyer can receive an accurate invoice promptly, with no personal or financial details stored in Git and no invoice misclassified as cash.
 - Actual result: Verified current GOV.UK invoice fields, sole-trader additions, trading-allowance record duties, and self-employed evidence requirements, plus Small Business Commissioner payment-delay guidance. Created a gated invoice shell that leaves Nathan's legal name, address, VAT status, bank suitability, and bank details for user verification only after agreement. No invoice, account, payment request, or transaction was created.
 - Decision: Keep bank transfer primary. Use the shell only after written buyer agreement; have Nathan verify all user-only fields; retain issued documents outside Git; record cash only from cleared account evidence.
+
+## E-013 — Secondary-outreach launch controls
+
+- Hypothesis: Prewriting five page-specific messages with real value and deterministic safety gates will reduce delay and generic copy risk if the secondary offer activates after the 24-hour primary review.
+- Cost: £0
+- Time: about 15 minutes
+- Expected result: each qualified secondary prospect has one concise draft that can be revalidated rather than improvised, while no message can be mistaken for sent or used before the evidence gate.
+- Actual result: Created five individually tailored drafts, each containing a public-page observation, a first-pass hero, explicit fact-confirmation boundaries, the £149 scope, no-access positioning, and an opt-out. Every file is marked `UNSENT`, has an earliest-use time of 2026-09-11 19:35 Europe/London, and requires page, Gmail, corporate-channel, suppression, and portfolio checks. Added validator coverage and a negative regression test; all eleven tests pass. No email was sent and no quote or pipeline value was created.
+- Decision: Keep the drafts dormant. At the 24-hour checkpoint, decide whether secondary activation is justified; if so, revalidate and send only the strongest current subset rather than automatically using all five.

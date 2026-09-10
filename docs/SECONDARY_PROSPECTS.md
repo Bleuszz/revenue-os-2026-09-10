@@ -61,4 +61,4 @@ These businesses passed the mandatory gates in `SECONDARY_QUALIFICATION.md`. The
 
 ## Hold rule
 
-Do not contact these prospects before the primary 10-message set reaches its 24-hour observation checkpoint, unless a stronger contrary signal justifies an earlier pivot. Before any send, re-open the page, confirm the evidence still exists, prepare a one-hero preview, check suppression, and record the exact corporate route.
+Do not contact these prospects before the primary 10-message set reaches its 24-hour observation checkpoint, unless a stronger contrary signal justifies an earlier pivot. Guarded drafts now exist in `secondary_outreach/`; before any send, re-open the page, confirm the evidence still exists, refresh the one-hero preview, search Gmail for prior contact, check suppression, and record the exact corporate route.

@@ -1,7 +1,7 @@
 # Autonomous Revenue Mission
 
 **Day:** 1 of 7  
-**Time remaining at 2026-09-10 20:41 BST:** about 6 days 22 hours 28 minutes
+**Time remaining at 2026-09-10 20:45 BST:** about 6 days 22 hours 24 minutes
 
 - Minimum net goal: £70.00
 - Aspirational goal: unbounded
@@ -20,7 +20,7 @@
 ## Active strategies
 
 1. Primary: £99 e-commerce listing rescue sprint — live test
-2. Secondary: £149 landing-page conversion patch — offer, five qualified reserves, and five preliminary previews ready; outbound held until trigger
+2. Secondary: £149 landing-page conversion patch — offer, five qualified reserves, five preliminary previews, and five guarded outreach drafts ready; outbound held until trigger
 3. Asymmetric experiment: £399 supplier-spec-to-catalogue workflow — tested fictional proof set and review report ready; offer only on explicit bulk-data/backlog pain
 4. Emergency fallback: sell verified user-owned inventory on eBay — requires inventory/photos
 5. Reserve: £59 Lane early-access onboarding — dependency/credential risk keeps it inactive
@@ -40,7 +40,7 @@
 
 **Next highest-EV action:** monitor all 10 threads, respond immediately to buyer signals, and keep the five-prospect secondary reserve unsent until the 24-hour trigger.
 
-**Operational integrity:** 10 automated tests and the read-only mission-state validator pass; ledger totals reconcile to the lead register. The primary offer now has a visually verified, formula-guarded 15-row Excel delivery handoff.
+**Operational integrity:** 11 automated tests and the read-only mission-state validator pass; ledger totals reconcile to the lead register. The primary offer has a visually verified, formula-guarded 15-row Excel delivery handoff, and all five secondary drafts have enforced timing and safety markers.
 
 **Compute status:** healthy
 

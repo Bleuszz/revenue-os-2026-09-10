@@ -130,6 +130,24 @@ def validate_followup(path: Path) -> list[str]:
     return errors
 
 
+def validate_secondary_draft(path: Path) -> list[str]:
+    errors: list[str] = []
+    text = path.read_text(encoding="utf-8")
+    for required in (
+        "UNSENT",
+        "Earliest use: 2026-09-11 19:35 Europe/London.",
+        "ops/SUPPRESSION.csv",
+        "Search Gmail for prior contact",
+        "Send only if the primary 24-hour review supports secondary activation.",
+        "£149",
+        "No site access is needed",
+        "reply `no thanks`",
+    ):
+        if required not in text:
+            errors.append(f"{path.name}: missing secondary-outreach safeguard {required!r}")
+    return errors
+
+
 def _ledger_amount(text: str, label: str, errors: list[str]) -> Decimal | None:
     match = re.search(rf"^- {re.escape(label)}: £([\d,]+(?:\.\d+)?)", text, re.MULTILINE)
     if not match:
@@ -192,6 +210,12 @@ def validate_repository(root: Path) -> list[str]:
         errors.append("docs/followups: expected at least one guarded follow-up")
     for path in followups:
         errors.extend(validate_followup(path))
+
+    secondary_drafts = sorted((root / "docs/secondary_outreach").glob("*.md"))
+    if len(secondary_drafts) != 5:
+        errors.append(f"docs/secondary_outreach: expected 5 guarded drafts, found {len(secondary_drafts)}")
+    for path in secondary_drafts:
+        errors.extend(validate_secondary_draft(path))
 
     sample_dir = root / "docs/samples"
     for filename in PRIMARY_PREVIEWS:

@@ -8,6 +8,7 @@ from tools.validate_mission import (
     validate_followup,
     validate_opportunities,
     validate_repository,
+    validate_secondary_draft,
 )
 
 
@@ -33,6 +34,15 @@ class MissionValidationTests(unittest.TestCase):
             errors = validate_followup(path)
         self.assertTrue(any("UNSENT" in error for error in errors))
         self.assertTrue(any("Earliest use" in error for error in errors))
+        self.assertTrue(any("SUPPRESSION" in error for error in errors))
+
+    def test_secondary_draft_without_activation_gate_is_rejected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "unsafe-secondary.md"
+            path.write_text("# Secondary outreach — UNSENT\n\nOffer: £149.\n", encoding="utf-8")
+            errors = validate_secondary_draft(path)
+        self.assertTrue(any("Earliest use" in error for error in errors))
+        self.assertTrue(any("primary 24-hour review" in error for error in errors))
         self.assertTrue(any("SUPPRESSION" in error for error in errors))
 
 
