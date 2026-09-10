@@ -1,7 +1,7 @@
 # Autonomous Revenue Mission
 
 **Day:** 1 of 7  
-**Time remaining at 2026-09-10 21:02 BST:** about 6 days 22 hours 7 minutes
+**Time remaining at 2026-09-10 21:07 BST:** about 6 days 22 hours 2 minutes
 
 - Minimum net goal: £70.00
 - Aspirational goal: unbounded
@@ -42,7 +42,7 @@
 
 **Latest external checkpoint:** Gmail returned no prospect replies and no mission-related delivery failures at 20:57 BST. This does not establish delivery, opens, or offer failure.
 
-**Operational integrity:** 13 automated tests and the read-only mission-state validator pass; ledger totals reconcile to the lead register. The primary offer has a visually verified, formula-guarded 15-row Excel delivery handoff and a claim-safe, one-page proof sheet; all five secondary drafts have enforced timing and safety markers, and the draft final report covers all seventeen required items exactly once. Root `progress.txt` is regenerated and fingerprint-checked before every commit in this checkout.
+**Operational integrity:** 13 automated tests and the read-only mission-state validator pass; ledger totals reconcile to the lead register. The primary offer has a visually verified, formula-guarded 15-row Excel delivery handoff and a claim-safe, one-page proof sheet; all five secondary drafts have enforced timing and safety markers, and the draft final report covers all seventeen required items exactly once. Root `progress.txt` has exact-content and fingerprint checks, local pre-commit regeneration, and push-triggered GitHub repair for changes made outside the configured checkout.
 
 **Compute status:** 90% of the weekly allowance remains; no paid credits. The allowance resets at 18:56 BST on the deadline day.
 

@@ -4,7 +4,7 @@ import unittest
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from tools.update_progress import build_progress, compute_repo_fingerprint
+from tools.update_progress import build_progress, compute_repo_fingerprint, progress_is_current
 from tools.validate_mission import (
     FINAL_REPORT_HEADINGS,
     OPPORTUNITY_COLUMNS,
@@ -77,6 +77,7 @@ class MissionValidationTests(unittest.TestCase):
             "Only cleared, accessible external-customer cash counts as realised revenue.",
             text,
         )
+        self.assertTrue(progress_is_current(ROOT))
 
 
 if __name__ == "__main__":

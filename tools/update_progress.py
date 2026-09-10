@@ -6,6 +6,7 @@ import csv
 import hashlib
 import re
 import subprocess
+from argparse import ArgumentParser
 from datetime import datetime, timedelta, timezone
 from decimal import Decimal
 from pathlib import Path
@@ -174,9 +175,31 @@ def build_progress(root: Path, now: datetime | None = None) -> str:
     return "\n".join(lines)
 
 
-def main() -> int:
+def progress_is_current(root: Path) -> bool:
+    output = root / "progress.txt"
+    if not output.is_file():
+        return False
+    text = output.read_text(encoding="utf-8")
+    match = re.search(r"^Generated: (\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}) BST$", text, re.MULTILINE)
+    if not match:
+        return False
+    generated = datetime.strptime(match.group(1), "%Y-%m-%d %H:%M:%S").replace(tzinfo=MISSION_TZ)
+    return text == build_progress(root, now=generated)
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--if-stale",
+        action="store_true",
+        help="leave an already-current progress file byte-for-byte unchanged",
+    )
+    args = parser.parse_args(argv)
     root = Path(__file__).resolve().parents[1]
     output = root / "progress.txt"
+    if args.if_stale and progress_is_current(root):
+        print(f"Current {output}")
+        return 0
     output.write_text(build_progress(root), encoding="utf-8", newline="\n")
     print(f"Updated {output}")
     return 0

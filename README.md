@@ -22,8 +22,10 @@ The mission must recover at least £70 net cash while risking no more than £30 
 `progress.txt` is the concise GitHub-visible mission snapshot. Regenerate it
 before every commit with `python tools/update_progress.py`. This checkout uses
 the tracked `.githooks/pre-commit` hook to regenerate and stage it automatically,
-then run the unit suite and mission validator. Enable the hook in another clone
-with:
+then run the unit suite and mission validator. A GitHub Actions workflow provides
+the second line of defence: on every push to `main`, it refreshes the file only
+when the exact generated snapshot is stale, validates the full repository, and
+commits only `progress.txt`. Enable the local hook in another clone with:
 
 ```powershell
 git config core.hooksPath .githooks
@@ -96,6 +98,9 @@ python tools/update_progress.py
 python -m unittest discover -s tests -v
 python tools/validate_mission.py
 ```
+
+Use `python tools/update_progress.py --if-stale` in automation to avoid
+timestamp-only changes when the snapshot is already exact.
 
 The mission validator is read-only. It checks the required command-centre files,
 CSV schemas and IDs, accounting reconciliation, selected strategy roles,

@@ -161,3 +161,12 @@
 - Expected result: one immediately usable A4 page explains scope, process, factual boundaries, and a tangible example while preserving the cash and outreach controls.
 - Actual result: Built a deterministic PDF from a tracked ReportLab builder. The one-page render has no clipping, overlap, or legibility defect; extracted text contains both pound signs and no replacement characters. Its before-and-after example is explicitly fictional, and the footer states that it is capability proof rather than client work or a performance claim. The file is local and unsent.
 - Decision: Use only after a genuine reply or an eligible, fully revalidated follow-up. Keep the no-result-claim label, factual boundary, thread check, suppression check, and timing gate; do not send another unsolicited message merely to distribute the asset.
+
+## E-018 — Cross-checkout progress resilience
+
+- Hypothesis: A push-triggered repair workflow can keep the GitHub-visible progress snapshot exact even when a web edit or unconfigured clone bypasses the local pre-commit hook.
+- Cost: £0 cash; a few seconds of GitHub Actions runtime per substantive push.
+- Time: about 10 minutes
+- Expected result: current pushes create no timestamp-only commit; stale pushes regenerate only `progress.txt`, require the full test and validator gates, and then repair the remote snapshot.
+- Actual result: Added `--if-stale` exact-snapshot detection, validator coverage, and a constrained main-branch workflow with write access only to repository contents. It commits only `progress.txt`; any other validation failure stops the job rather than being hidden by an automated commit.
+- Decision: Keep local pre-commit regeneration as the first line of defence and remote repair as the second. Monitor the first workflow run, retain a five-minute timeout, and disable the workflow if it produces unexpected commits or material Actions cost.

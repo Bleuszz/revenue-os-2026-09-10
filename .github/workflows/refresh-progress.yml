@@ -1,0 +1,48 @@
+name: Refresh mission progress
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-mission-progress-main
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Refresh only when stale
+        run: python tools/update_progress.py --if-stale
+
+      - name: Run tests
+        run: python -m unittest discover -s tests -q
+
+      - name: Validate mission state
+        run: python tools/validate_mission.py
+
+      - name: Commit regenerated progress
+        shell: bash
+        run: |
+          if git diff --quiet -- progress.txt; then
+            echo "progress.txt is current"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add progress.txt
+          git commit -m "Refresh live mission progress"
+          git push

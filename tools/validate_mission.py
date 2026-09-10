@@ -14,9 +14,9 @@ from pathlib import Path
 from typing import Iterable
 
 try:
-    from .update_progress import compute_repo_fingerprint
+    from .update_progress import compute_repo_fingerprint, progress_is_current
 except ImportError:
-    from update_progress import compute_repo_fingerprint
+    from update_progress import compute_repo_fingerprint, progress_is_current
 
 
 REQUIRED_FILES = (
@@ -43,6 +43,7 @@ REQUIRED_FILES = (
     "tools/build_listing_rescue_workbook.mjs",
     "tools/update_progress.py",
     ".githooks/pre-commit",
+    ".github/workflows/refresh-progress.yml",
     "progress.txt",
 )
 
@@ -309,6 +310,8 @@ def validate_repository(root: Path) -> list[str]:
         ):
             if required not in text:
                 errors.append(f"progress.txt: missing required section or rule {required!r}")
+        if not progress_is_current(root):
+            errors.append("progress.txt: content does not exactly match its generated mission snapshot")
 
     return errors
 
