@@ -1,7 +1,7 @@
 # Autonomous Revenue Mission
 
 **Day:** 1 of 7  
-**Time remaining at 2026-09-10 20:03 BST:** about 6 days 23 hours 6 minutes
+**Time remaining at 2026-09-10 20:06 BST:** about 6 days 23 hours 3 minutes
 
 - Minimum net goal: £70.00
 - Aspirational goal: unbounded
@@ -21,7 +21,7 @@
 
 1. Primary: £99 e-commerce listing rescue sprint — live test
 2. Secondary: £149 landing-page conversion patch — offer, five qualified reserves, and five preliminary previews ready; outbound held until trigger
-3. Asymmetric experiment: £399 supplier-spec-to-catalogue workflow — offer only on explicit bulk-data/backlog pain
+3. Asymmetric experiment: £399 supplier-spec-to-catalogue workflow — tested fictional proof set and review report ready; offer only on explicit bulk-data/backlog pain
 4. Emergency fallback: sell verified user-owned inventory on eBay — requires inventory/photos
 5. Reserve: £59 Lane early-access onboarding — dependency/credential risk keeps it inactive
 

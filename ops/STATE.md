@@ -1,6 +1,6 @@
 # Mission State
 
-Last updated: 2026-09-10 20:03 Europe/London
+Last updated: 2026-09-10 20:06 Europe/London
 
 ## Objective
 
@@ -27,7 +27,7 @@ Maximise legitimate verified net cash recovery by 2026-09-17 19:09 Europe/London
 
 - Primary: £99 e-commerce listing rescue — 15 titles, description improvements, and catalogue QA flags within 24 hours.
 - Secondary: £149 landing-page conversion patch; offer, qualification rubric, five qualified reserve prospects, and five preliminary page-specific previews are ready, with outbound held until the activation trigger.
-- Asymmetric: £399 supplier-spec-to-catalogue workflow with a 25-SKU reviewed pilot; £799 expansion only after input quality and review burden are known.
+- Asymmetric: £399 supplier-spec-to-catalogue workflow with a 25-SKU reviewed pilot; a tested fictional three-product proof set and review report are ready; £799 expansion only after input quality and review burden are known.
 - Emergency: sell user-owned existing inventory on eBay if inventory and photographs are supplied.
 - Reserve: £59 Lane early-access onboarding; demoted because dependencies and marketplace credentials increase fulfilment risk.
 

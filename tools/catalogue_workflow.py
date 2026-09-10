@@ -181,7 +181,72 @@ def process_rows(rows: Iterable[dict[str, str]], title_limit: int = 80) -> list[
     return drafts
 
 
-def run(input_path: Path, output_path: Path, title_limit: int = 80) -> int:
+def markdown_text(value: str) -> str:
+    """Escape generated text so source fields cannot alter report structure."""
+    escaped = value.replace("\\", "\\\\")
+    for character in ("`", "*", "_", "[", "]", "<", ">"):
+        escaped = escaped.replace(character, f"\\{character}")
+    return escaped
+
+
+def write_report(drafts: list[Draft], report_path: Path) -> None:
+    """Write a review report alongside the machine-readable draft CSV."""
+    passed = sum(draft.checks_pass for draft in drafts)
+    lines = [
+        "# Catalogue workflow review report",
+        "",
+        "**HUMAN FACTUAL REVIEW REQUIRED**",
+        "",
+        (
+            "This report contains review-only drafts generated from supplied source "
+            "fields. It does not approve any copy for publication."
+        ),
+        "",
+        "## Summary",
+        "",
+        f"- Products processed: {len(drafts)}",
+        f"- Structure checks passed: {passed}",
+        f"- Structure checks failed: {len(drafts) - passed}",
+        "",
+    ]
+    for draft in drafts:
+        flags = draft.flags or ("none recorded",)
+        lines.extend(
+            [
+                f"## {markdown_text(draft.sku)}",
+                "",
+                f"- Draft title: {markdown_text(draft.title)}",
+                (
+                    "- Structure checks pass: "
+                    f"{'yes' if draft.checks_pass else 'no'}"
+                ),
+                "- Review status: HUMAN FACTUAL REVIEW REQUIRED",
+                "",
+                "### Draft description",
+                "",
+                markdown_text(draft.description),
+                "",
+                "### Confirmed source facts",
+                "",
+            ]
+        )
+        lines.extend(
+            f"- {markdown_text(feature)}" for feature in split_pipe(draft.features)
+        )
+        lines.extend(["", "### QA flags", ""])
+        lines.extend(f"- {markdown_text(flag)}" for flag in flags)
+        lines.append("")
+
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    report_path.write_text("\n".join(lines), encoding="utf-8")
+
+
+def run(
+    input_path: Path,
+    output_path: Path,
+    title_limit: int = 80,
+    report_path: Path | None = None,
+) -> int:
     with input_path.open("r", encoding="utf-8-sig", newline="") as handle:
         reader = csv.DictReader(handle)
         columns = set(reader.fieldnames or [])
@@ -197,6 +262,8 @@ def run(input_path: Path, output_path: Path, title_limit: int = 80) -> int:
         writer = csv.DictWriter(handle, fieldnames=OUTPUT_COLUMNS)
         writer.writeheader()
         writer.writerows(draft.as_row() for draft in drafts)
+    if report_path is not None:
+        write_report(drafts, report_path)
     return len(drafts)
 
 
@@ -207,6 +274,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("input_csv", type=Path)
     parser.add_argument("output_csv", type=Path)
     parser.add_argument("--title-limit", type=int, default=80)
+    parser.add_argument(
+        "--report-md",
+        type=Path,
+        help="Optional path for a human-review Markdown report.",
+    )
     args = parser.parse_args()
     if args.title_limit < 20:
         parser.error("--title-limit must be at least 20")
@@ -216,10 +288,17 @@ def parse_args() -> argparse.Namespace:
 def main() -> int:
     args = parse_args()
     try:
-        count = run(args.input_csv, args.output_csv, title_limit=args.title_limit)
+        count = run(
+            args.input_csv,
+            args.output_csv,
+            title_limit=args.title_limit,
+            report_path=args.report_md,
+        )
     except (OSError, ValidationError) as exc:
         raise SystemExit(f"error: {exc}") from exc
     print(f"wrote {count} review-only draft row(s) to {args.output_csv}")
+    if args.report_md is not None:
+        print(f"wrote human-review report to {args.report_md}")
     return 0
 
 

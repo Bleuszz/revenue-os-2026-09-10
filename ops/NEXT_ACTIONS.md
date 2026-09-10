@@ -42,7 +42,7 @@ Scales: value in expected seven-day net cash; probability 0–1; time in operato
    - Compute: Low
    - Dependencies: buyer agreement; Nathan supplies bank details only then, or confirms an existing usable PayPal account
 
-6. If no meaningful response after 20 qualified sends or by day 3, choose between the £149 landing-page patch and the £399 catalogue-workflow pilot based on observed buyer pain; activate the eBay-inventory contingency if the user supplies inventory and photographs.
+6. If no meaningful response after 20 qualified sends or by day 3, choose between the £149 landing-page patch and the £399 catalogue-workflow pilot based on observed buyer pain; use the fictional three-product proof set only as capability evidence, and activate the eBay-inventory contingency if the user supplies inventory and photographs.
    - Value if successful: £70–£799+
    - Probability: to be measured
    - Time: 60 minutes

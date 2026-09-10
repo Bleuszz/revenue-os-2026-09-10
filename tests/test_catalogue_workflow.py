@@ -71,6 +71,22 @@ class CatalogueWorkflowTests(unittest.TestCase):
             self.assertEqual(result[0]["sku"], "SKU-001")
             self.assertEqual(result[0]["structure_checks_pass"], "yes")
 
+    def test_run_writes_human_review_report_with_flags(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            input_path = Path(temp_dir) / "input.csv"
+            output_path = Path(temp_dir) / "output.csv"
+            report_path = Path(temp_dir) / "report.md"
+            with input_path.open("w", encoding="utf-8", newline="") as handle:
+                writer = csv.DictWriter(handle, fieldnames=list(row().keys()))
+                writer.writeheader()
+                writer.writerow(row(warranty=""))
+            self.assertEqual(run(input_path, output_path, report_path=report_path), 1)
+            report = report_path.read_text(encoding="utf-8")
+            self.assertIn("HUMAN FACTUAL REVIEW REQUIRED", report)
+            self.assertIn("SKU-001", report)
+            self.assertIn("Example Brand", report)
+            self.assertIn("missing optional field: warranty", report)
+
 
 if __name__ == "__main__":
     unittest.main()

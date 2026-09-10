@@ -47,10 +47,10 @@ Use manual-first demand tests, contact a small number of highly relevant busines
 Create review-only product drafts from buyer-approved facts:
 
 ```powershell
-python tools/catalogue_workflow.py templates/catalogue_input_example.csv work/catalogue_output.csv
+python tools/catalogue_workflow.py templates/catalogue_input_demo.csv templates/catalogue_output_demo.csv --report-md docs/samples/catalogue-workflow-report.md
 ```
 
-The output always requires human factual review and is never automatically published.
+The CSV and Markdown report always require human factual review and are never automatically published. The checked-in three-product demo is fictional and demonstrates clean input, missing optional fields, and prohibited-claim detection; it is not client work or performance evidence.
 
 Run verification:
 
