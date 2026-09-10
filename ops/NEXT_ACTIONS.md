@@ -18,15 +18,15 @@ Scales: value in expected seven-day net cash; probability 0–1; time in operato
    - Compute: Medium
    - Dependencies: prospect reply and listings; use `docs/BUYER_CLOSE_KIT.md`, obey `docs/LISTING_RESCUE_PROOF_SHEET.md`, generate the clean workbook with `tools/build_listing_rescue_workbook.mjs`, and adapt the response to the actual thread. If the buyer agrees, use `docs/INVOICE_READINESS.md` before requesting bank payment.
 
-3. Hold the five qualified secondary-offer prospects without contact until the primary observation trigger; if activated, recheck page evidence, refresh the saved preview, and use the matching guarded draft only after every pre-send check passes.
-   - Value if successful: preserves a ready day-2 or day-3 reserve worth up to £745 nominal without misclassifying it as pipeline
+3. At the 2026-09-11 07:36 BST checkpoint, use the overnight primary evidence to decide whether to launch a three-prospect secondary calibration to LBC Logistics, Totally Floorsome, and Arrow Engineering. Recheck page evidence, refresh the saved preview, and use the matching guarded draft only after every pre-send check passes. Keep FMSG and Live Innovative Solutions behind the 19:35 gate.
+   - Value if successful: starts a distinct £149 offer during the next business morning while preserving two secondary reserves; all £745 remains excluded from pipeline until contact
    - Probability: 0.05 per eventual qualified contact is an untested planning estimate
    - Time: 5–10 minutes per activated prospect
    - Money: £0
    - Compute: Medium
-   - Dependencies: 24-hour primary checkpoint or stronger contrary evidence; no buyer reply requiring immediate fulfilment; matching file in `docs/secondary_outreach/`; fresh Gmail and suppression checks
+   - Dependencies: at least twelve hours since the final primary send; no primary reply requiring immediate fulfilment; no bounce or channel warning; matching file in `docs/secondary_outreach/`; fresh public-page, Gmail, corporate-channel, and suppression checks
 
-4. At the 24-hour checkpoint, inspect response/bounce evidence and either schedule the saved Howleys and Pizzazz cross-channel follow-ups for revalidation at 48 hours, refine the message/channel, or activate the secondary offer.
+4. At the 24-hour checkpoint, inspect response/bounce and any secondary-calibration evidence; either keep the saved Howleys and Pizzazz cross-channel follow-ups queued for revalidation at 48 hours, refine the message/channel, or activate the remaining two secondary prospects.
    - Value if successful: protects deliverability and improves conversion learning
    - Probability: conditional on evidence
    - Time: 20 minutes

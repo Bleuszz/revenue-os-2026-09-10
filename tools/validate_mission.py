@@ -165,12 +165,23 @@ def validate_followup(path: Path) -> list[str]:
 def validate_secondary_draft(path: Path) -> list[str]:
     errors: list[str] = []
     text = path.read_text(encoding="utf-8")
+    early_names = {
+        "arrow-engineering.md",
+        "lbc-logistics.md",
+        "totally-floorsome.md",
+    }
+    if path.name in early_names:
+        earliest_use = "Earliest use: 2026-09-11 07:36 Europe/London."
+        activation_gate = "Send only if the overnight 12-hour primary review supports a three-prospect secondary calibration."
+    else:
+        earliest_use = "Earliest use: 2026-09-11 19:35 Europe/London."
+        activation_gate = "Send only if the primary 24-hour review supports secondary activation."
     for required in (
         "UNSENT",
-        "Earliest use: 2026-09-11 19:35 Europe/London.",
+        earliest_use,
         "ops/SUPPRESSION.csv",
         "Search Gmail for prior contact",
-        "Send only if the primary 24-hour review supports secondary activation.",
+        activation_gate,
         "£149",
         "No site access is needed",
         "reply `no thanks`",

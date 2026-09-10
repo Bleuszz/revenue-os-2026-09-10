@@ -1,13 +1,13 @@
 # Arrow Engineering secondary outreach — UNSENT
 
-Earliest use: 2026-09-11 19:35 Europe/London.
+Earliest use: 2026-09-11 07:36 Europe/London.
 
 ## Pre-send gate
 
 - Revalidate the services page and browser title, including the template token.
 - Search Gmail for prior contact, replies, or bounces.
 - Check `ops/SUPPRESSION.csv` and confirm the sales mailbox is still public.
-- Send only if the primary 24-hour review supports secondary activation.
+- Send only if the overnight 12-hour primary review supports a three-prospect secondary calibration.
 
 To: `sales@arrowengineering.com`
 

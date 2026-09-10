@@ -179,3 +179,12 @@
 - Expected result: routine checks remain four-hourly, while the 11 September critical run occurs just after 19:35 BST and can act on the full observation window.
 - Actual result: Updated the existing heartbeat anchor to 23:36 BST and verified its stored state remains active on the same thread with the same prompt and deadline. The cadence now reaches 19:36 BST on day two rather than 19:31 BST.
 - Decision: Retain the shifted cadence. At 19:36 BST on 11 September, recheck all ten Gmail threads and bounces, then make the recorded primary/secondary activation decision from actual evidence.
+
+## E-020 — Overnight three-prospect secondary calibration gate
+
+- Hypothesis: A three-prospect, next-business-morning test of the distinct £149 landing-page offer can diversify acquisition and preserve time-to-cash without invalidating the ten-send primary calibration or turning into high-volume outreach.
+- Cost: £0; no message sent at preparation time
+- Time: about 10 minutes
+- Expected result: if overnight evidence remains clean, the three strongest secondary prospects can be revalidated and contacted at 07:36 BST while two reserves remain untouched for the full 24-hour decision.
+- Actual result: Ranked LBC Logistics (94), Totally Floorsome (93), and Arrow Engineering (90) into the morning calibration and moved only their deterministic gates to 2026-09-11 07:36 Europe/London. FMSG and Live Innovative Solutions retain 19:35 gates. Every draft remains `UNSENT`; quoted value, pipeline, agreement, cash, and spend are unchanged.
+- Decision: At 07:36 BST, first inspect all primary replies and bounces. Send the three secondary messages only if no buyer needs immediate fulfilment, no deliverability/channel warning exists, each page and public corporate address still supports the exact draft, and suppression is clear. Otherwise keep them unsent and record the reason.

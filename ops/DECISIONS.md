@@ -87,3 +87,10 @@
 - Decision: Keep the four-hour continuation cadence but anchor it so the day-two critical run occurs at 19:36 BST, one minute after the primary observation gate.
 - Reason: The prior 19:31 BST occurrence was too early to activate the secondary path and would have deferred the next autonomous decision until 23:31. A five-minute shift removes that delay without consuming more runs.
 - Control: Do not treat the schedule as evidence. The 19:36 run must still inspect Gmail, bounces, suppression, and live prospect pages before any external action.
+
+## D-014 — Test only the top three secondary prospects after overnight evidence
+
+- Date: 2026-09-10
+- Decision: Make LBC Logistics, Totally Floorsome, and Arrow Engineering eligible for a three-message secondary calibration at 07:36 BST on 11 September; retain FMSG and Live Innovative Solutions until the full 24-hour gate.
+- Reason: The secondary offer is materially distinct and the mission requires portfolio execution, while a three-message morning batch preserves low volume, separates the top scores, and leaves two reserves for later evidence. Waiting for all five until evening would forfeit most of a business day and reduce seven-day time-to-cash.
+- Control: Eligibility is not authorization to send blindly. The morning run must confirm at least twelve hours have elapsed since the final primary send, inspect primary replies and bounces, revalidate the exact pages and corporate mailboxes, check suppression, and stop if a buyer signal or channel warning changes the priority.

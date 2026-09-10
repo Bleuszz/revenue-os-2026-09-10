@@ -1,6 +1,6 @@
 # Mission State
 
-Last updated: 2026-09-10 21:11 Europe/London
+Last updated: 2026-09-10 21:16 Europe/London
 
 ## Objective
 
@@ -9,7 +9,7 @@ Maximise legitimate verified net cash recovery by 2026-09-17 19:09 Europe/London
 ## Current state
 
 - Day: 1 of 7
-- Phase: primary market-test measurement; secondary offer prepared
+- Phase: primary market-test measurement; three-prospect secondary morning calibration gated
 - Cash received: £0.00
 - Expenses: £0.00
 - Net cash recovery: £0.00
@@ -28,12 +28,12 @@ Maximise legitimate verified net cash recovery by 2026-09-17 19:09 Europe/London
 - Fulfilment readiness: a visually verified 15-row Excel handoff for the £99 primary offer is generated from `tools/build_listing_rescue_workbook.mjs`. It tracks source facts, proposed copy, QA questions, fact review, buyer approval, and dynamic publish-readiness without containing prospect data.
 - Trust readiness: a deterministic one-page proof sheet for the £99 offer is text-verified and visually clean at A4. Its example is fictional, it makes no result claim, and it remains unsent behind reply/follow-up, full-thread, suppression, and timing gates.
 - Invoice readiness: an official-source-grounded UK bank-transfer invoice checklist and shell are prepared. Nathan's legal/address/VAT/bank fields remain absent and are requested only after buyer agreement; an issued invoice is pending, not cash.
-- Secondary launch readiness: five tailored £149 landing-page messages now provide a current-page observation and a public-fact hero. They are local and `UNSENT`, cannot be used before 2026-09-11 19:35 Europe/London, and require fresh page, Gmail, corporate-channel, and suppression checks before any send.
+- Secondary launch readiness: five tailored £149 landing-page messages provide a current-page observation and a public-fact hero. All remain local and `UNSENT`. The top three by score - LBC Logistics, Totally Floorsome, and Arrow Engineering - become eligible for a bounded calibration at 2026-09-11 07:36 BST after overnight evidence and fresh page, Gmail, corporate-channel, and suppression checks; the other two remain gated until 19:35.
 - Final-report readiness: `FINAL_REPORT.md` maps all seventeen required items to current evidence and deadline checks. It remains explicitly a draft; undetermined outcomes, unlaunched strategies, pipeline, and cleared cash are not conflated.
 - Sent-message integrity: all ten actual Gmail bodies were audited. Each uses a truthful sender identity, a fixed £99 scope, no-access fulfilment, a free-preview CTA, and an opt-out. The public Lane link is accessible technical capability evidence only; it is not client-outcome or social proof.
 - GitHub progress visibility: root `progress.txt` is generated from authoritative mission files and a tracked-content fingerprint. The configured pre-commit hook regenerates and stages it, then requires the unit suite and mission validator to pass. The first push-triggered GitHub run completed successfully in about eleven seconds, recognized the snapshot as current, passed all checks, and made no unnecessary bot commit.
 - Compute control: 10% of the weekly Codex allowance is consumed and 90% remains; no paid credits exist. Conservation is elevated after the reusable day-one setup, with routine Gmail checks batched on the four-hour heartbeat and no further speculative builds without a buyer signal or recorded threshold.
-- Continuation timing: the active four-hour heartbeat is anchored at 23:36 BST, so the critical day-two run lands at 19:36 BST on 11 September - one minute after the primary 24-hour decision gate rather than four minutes before it.
+- Continuation timing: the active four-hour heartbeat is anchored at 23:36 BST. Its 07:36 day-two run aligns with the overnight secondary-calibration gate, and its 19:36 run lands one minute after the primary 24-hour decision gate.
 
 ## Current portfolio
 
