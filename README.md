@@ -52,6 +52,19 @@ python tools/catalogue_workflow.py templates/catalogue_input_demo.csv templates/
 
 The CSV and Markdown report always require human factual review and are never automatically published. The checked-in three-product demo is fictional and demonstrates clean input, missing optional fields, and prohibited-claim detection; it is not client work or performance evidence.
 
+## Listing-rescue delivery workbook
+
+Regenerate the buyer-review workbook for the £99 primary offer:
+
+```powershell
+node tools/build_listing_rescue_workbook.mjs
+```
+
+The workbook is written to `outputs/listing-rescue-delivery-template.xlsx`. It
+contains fifteen listing rows, fact-source and buyer-approval controls, dynamic
+row statuses, and no prospect data. The generated file is excluded from Git;
+the builder is tracked so a clean template can be reproduced before fulfilment.
+
 Run verification:
 
 ```powershell

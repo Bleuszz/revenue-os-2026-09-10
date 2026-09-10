@@ -98,3 +98,12 @@
 - Expected result: one command detects missing command-centre files, schema/ID errors, misclassified value, opportunity-role drift, unsafe follow-up drafts, and reintroduced preview assumptions before commit.
 - Actual result: Added `tools/validate_mission.py` and three focused tests. All ten repository tests pass. The validator passes against 28 opportunities, 17 leads, 10 contacts, and 10 primary previews; it also reconciles £0 cash, £990 nominal pipeline, £99 weighted pipeline, and £745 uncontacted secondary reserve to `ops/LEADS.csv`.
 - Decision: Run the unit suite and mission validator before every material state commit. The check is a safety net, not evidence of delivery, engagement, agreement, or revenue.
+
+## E-011 — Primary-offer fulfilment handoff
+
+- Hypothesis: A reusable, source-controlled buyer-review workbook will reduce paid-order turnaround and factual risk without requiring marketplace access.
+- Cost: £0
+- Time: about 20 minutes
+- Expected result: a clean fifteen-row handoff that exposes missing drafts, unresolved product facts, requested buyer changes, and final approvals before any copy is published.
+- Actual result: Built and visually inspected a one-sheet Excel handoff with buyer/date inputs, fifteen listing rows, fact-review and approval dropdowns, dynamic row and overall statuses, frozen navigation, and conditional warnings. Exercised the state transitions from missing draft to buyer confirmation required to approved, restored the blank template, exported it, reopened the saved file, and found no formula errors. It contains no customer or prospect data.
+- Decision: Use the generated workbook for any paid primary-order fulfilment. Keep buyer data outside Git, treat approval as a publishing gate rather than performance evidence, and regenerate a clean template for each order.

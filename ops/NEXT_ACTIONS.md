@@ -10,13 +10,13 @@ Scales: value in expected seven-day net cash; probability 0–1; time in operato
    - Compute: Low
    - Dependencies: Gmail connection
 
-2. On a positive reply, deliver the saved three-listing preview or a prospect-specific equivalent and request explicit agreement for the £99 sprint.
+2. On a positive reply, deliver the saved three-listing preview or a prospect-specific equivalent, request explicit agreement for the £99 sprint, and prepare the remaining handoff in the generated listing-rescue workbook.
    - Value if successful: £99 cash per sale
    - Probability: conditional on response
    - Time: 25 minutes
    - Money: £0
    - Compute: Medium
-   - Dependencies: prospect reply and listings; use `docs/BUYER_CLOSE_KIT.md` and adapt it to the actual thread
+   - Dependencies: prospect reply and listings; use `docs/BUYER_CLOSE_KIT.md`, generate the clean workbook with `tools/build_listing_rescue_workbook.mjs`, and adapt the response to the actual thread
 
 3. Hold the five qualified secondary-offer prospects without contact until the primary observation trigger; recheck page evidence and refresh the saved preliminary preview immediately before any eventual send.
    - Value if successful: preserves a ready day-2 or day-3 reserve worth up to £745 nominal without misclassifying it as pipeline

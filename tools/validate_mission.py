@@ -31,6 +31,7 @@ REQUIRED_FILES = (
     "ops/DASHBOARD.md",
     "ops/OPPORTUNITIES.csv",
     "ops/SUPPRESSION.csv",
+    "tools/build_listing_rescue_workbook.mjs",
 )
 
 LEAD_COLUMNS = (

@@ -43,6 +43,13 @@ Before requesting payment, ensure the thread contains all of the following:
 - Exclusions: no marketplace access, publishing, performance guarantee, invented facts, or regulated advice.
 - Approval: buyer reviews all copy before publishing.
 
+After agreement, generate a clean `outputs/listing-rescue-delivery-template.xlsx`
+with `node tools/build_listing_rescue_workbook.mjs`. Enter the buyer name and
+dates only in the generated workbook, never in reusable examples. Populate each
+row from seller-controlled or buyer-approved facts, leave unresolved items as
+visible questions, and send the completed workbook only after its row-status
+checks show no missing drafts.
+
 ## Payment-choice message
 
 > Great — the £99 scope is confirmed. I can take UK bank transfer, or send a PayPal commercial invoice if that is easier. Which do you prefer?

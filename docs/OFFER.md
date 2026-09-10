@@ -38,5 +38,6 @@ If a buyer has 100+ products and explicit supplier-data or consistency pain, do 
 2. Offer a three-listing preview before commitment.
 3. On interest, confirm scope and ask whether the buyer prefers UK bank transfer or a PayPal commercial invoice. Bank details are supplied only after agreement; PayPal is offered only if an existing account is already usable and timely.
 4. Deliver the three-listing preview, then collect the agreed payment/deposit before the remaining batch unless the buyer requires another reasonable structure.
+5. Populate the generated listing-rescue workbook with source-grounded copy and QA questions. Keep every row blocked until its source facts are reviewed; the buyer approves all final copy before publishing.
 
 See `PAYMENT_COLLECTION.md` for verification, privacy, fee, and no-ID controls.

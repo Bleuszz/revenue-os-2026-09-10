@@ -1,6 +1,6 @@
 # Mission State
 
-Last updated: 2026-09-10 20:30 Europe/London
+Last updated: 2026-09-10 20:38 Europe/London
 
 ## Objective
 
@@ -25,6 +25,7 @@ Maximise legitimate verified net cash recovery by 2026-09-17 19:09 Europe/London
 - Follow-up readiness: evidence-linked Howleys and Pizzazz cross-channel QA snapshots and messages are saved locally; the Howleys snapshot also has a visually verified one-page PDF. All remain unsent until revalidation at the 48-hour gate.
 - Sample QA: all ten primary preview files were audited and three inference/preservation defects were corrected. Storefront identity and third-party pages are not authoritative product sources, ambiguous source text stays unresolved, and narrow corrections preserve unaffected wording. The VWS sent example was explicitly conditional; future versions use a visible placeholder.
 - State validation: `python tools/validate_mission.py` reconciles the lead register to the finance ledger and checks required files, schemas, IDs, opportunity coverage, guarded follow-ups, and saved-preview factual controls before a commit.
+- Fulfilment readiness: a visually verified 15-row Excel handoff for the £99 primary offer is generated from `tools/build_listing_rescue_workbook.mjs`. It tracks source facts, proposed copy, QA questions, fact review, buyer approval, and dynamic publish-readiness without containing prospect data.
 
 ## Current portfolio
 
