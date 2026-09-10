@@ -1,7 +1,7 @@
 # End-of-mission report — DRAFT
 
 Mission deadline: 2026-09-17 19:09 Europe/London
-Current evidence snapshot: 2026-09-10 20:55 Europe/London
+Current evidence snapshot: 2026-09-10 21:02 Europe/London
 
 This is a living evidence scaffold, not the final result. Update it from the
 authoritative repository and external payment/contact evidence at the deadline.
@@ -108,7 +108,7 @@ Current private repository:
 `https://github.com/Bleuszz/revenue-os-2026-09-10`.
 
 Current code includes the catalogue workflow and tests, mission-state validator,
-Howleys PDF builder, listing-rescue Excel builder, and fingerprint-bound
+Howleys PDF builder, listing-rescue proof-sheet and Excel builders, and fingerprint-bound
 `progress.txt` generator with a tracked pre-commit gate. At the deadline, verify
 the remote head, privacy, clean working state, tests, and exact useful code list.
 
@@ -117,6 +117,7 @@ the remote head, privacy, clean working state, tests, and exact useful code list
 Current assets include root `progress.txt`, ten primary previews, five secondary previews, two
 guarded 48-hour primary follow-ups, five guarded secondary drafts, a fictional
 three-product catalogue proof set, a visually verified Howleys QA PDF, a
+visually and text-verified one-page listing-rescue proof sheet, a
 visually verified listing-rescue Excel handoff, payment/close/invoice kits, and
 the operating command centre.
 

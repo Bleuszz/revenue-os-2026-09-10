@@ -76,6 +76,19 @@ contains fifteen listing rows, fact-source and buyer-approval controls, dynamic
 row statuses, and no prospect data. The generated file is excluded from Git;
 the builder is tracked so a clean template can be reproduced before fulfilment.
 
+## Listing-rescue proof sheet
+
+Regenerate the one-page response/follow-up asset:
+
+```powershell
+python tools/build_listing_rescue_proof_pdf.py
+```
+
+The PDF is written to `outputs/listing-rescue-proof-sheet.pdf`. Its example is
+fictional and explicitly labelled as such; it makes no client or performance
+claim. `docs/LISTING_RESCUE_PROOF_SHEET.md` contains the thread, suppression,
+timing, extraction, and visual-QA gates that apply before use.
+
 Run verification:
 
 ```powershell
@@ -97,6 +110,7 @@ No deployment exists. A website will be created only if it materially improves c
 - Stripe live payments are unavailable under the standing no-photo-ID constraint. Direct UK bank transfer is the primary post-agreement route; an existing usable PayPal account is conditional fallback only.
 - No sale, payment, customer, testimonial, traffic, or conversion result exists at mission start.
 - Cold outreach must use relevant public business channels, honest identity, low volume, and a clear opt-out.
+- The proof-sheet builder uses the current Windows host's Arial fonts and the bundled PDF runtime; generated PDFs are excluded from Git but deterministically reproducible.
 
 ## Security notes
 

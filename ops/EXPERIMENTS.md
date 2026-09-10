@@ -152,3 +152,12 @@
 - Expected result: `progress.txt` exposes the clock, cash, non-cash states, funnel, portfolio, gates, and latest events; any tracked repository change makes validation fail until the snapshot is regenerated.
 - Actual result: Added `tools/update_progress.py`, a tracked pre-commit hook, validator checks, README instructions, and a deterministic test. The hook regenerates and stages `progress.txt`, then runs the full unit suite and mission validator before allowing a commit in this configured checkout.
 - Decision: Treat `progress.txt` as generated output. Refresh it on every material repository change, retain the fingerprint gate, and verify the pushed remote head after each commit.
+
+## E-017 — Claim-safe listing-rescue proof sheet
+
+- Hypothesis: A concise visual proof sheet can reduce the primary offer's trust barrier in a real reply or eligible follow-up without relying on client claims, marketplace access, or a public deployment.
+- Cost: £0
+- Time: about 15 minutes
+- Expected result: one immediately usable A4 page explains scope, process, factual boundaries, and a tangible example while preserving the cash and outreach controls.
+- Actual result: Built a deterministic PDF from a tracked ReportLab builder. The one-page render has no clipping, overlap, or legibility defect; extracted text contains both pound signs and no replacement characters. Its before-and-after example is explicitly fictional, and the footer states that it is capability proof rather than client work or a performance claim. The file is local and unsent.
+- Decision: Use only after a genuine reply or an eligible, fully revalidated follow-up. Keep the no-result-claim label, factual boundary, thread check, suppression check, and timing gate; do not send another unsolicited message merely to distribute the asset.

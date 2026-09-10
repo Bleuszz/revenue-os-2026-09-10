@@ -38,6 +38,8 @@ REQUIRED_FILES = (
     "ops/SUPPRESSION.csv",
     "ops/FINAL_REPORT.md",
     "docs/INVOICE_READINESS.md",
+    "docs/LISTING_RESCUE_PROOF_SHEET.md",
+    "tools/build_listing_rescue_proof_pdf.py",
     "tools/build_listing_rescue_workbook.mjs",
     "tools/update_progress.py",
     ".githooks/pre-commit",

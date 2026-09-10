@@ -1,6 +1,6 @@
 # Mission State
 
-Last updated: 2026-09-10 20:57 Europe/London
+Last updated: 2026-09-10 21:02 Europe/London
 
 ## Objective
 
@@ -26,6 +26,7 @@ Maximise legitimate verified net cash recovery by 2026-09-17 19:09 Europe/London
 - Sample QA: all ten primary preview files were audited and three inference/preservation defects were corrected. Storefront identity and third-party pages are not authoritative product sources, ambiguous source text stays unresolved, and narrow corrections preserve unaffected wording. The VWS sent example was explicitly conditional; future versions use a visible placeholder.
 - State validation: `python tools/validate_mission.py` reconciles the lead register to the finance ledger and checks required files, schemas, IDs, opportunity coverage, guarded follow-ups, and saved-preview factual controls before a commit.
 - Fulfilment readiness: a visually verified 15-row Excel handoff for the £99 primary offer is generated from `tools/build_listing_rescue_workbook.mjs`. It tracks source facts, proposed copy, QA questions, fact review, buyer approval, and dynamic publish-readiness without containing prospect data.
+- Trust readiness: a deterministic one-page proof sheet for the £99 offer is text-verified and visually clean at A4. Its example is fictional, it makes no result claim, and it remains unsent behind reply/follow-up, full-thread, suppression, and timing gates.
 - Invoice readiness: an official-source-grounded UK bank-transfer invoice checklist and shell are prepared. Nathan's legal/address/VAT/bank fields remain absent and are requested only after buyer agreement; an issued invoice is pending, not cash.
 - Secondary launch readiness: five tailored £149 landing-page messages now provide a current-page observation and a public-fact hero. They are local and `UNSENT`, cannot be used before 2026-09-11 19:35 Europe/London, and require fresh page, Gmail, corporate-channel, and suppression checks before any send.
 - Final-report readiness: `FINAL_REPORT.md` maps all seventeen required items to current evidence and deadline checks. It remains explicitly a draft; undetermined outcomes, unlaunched strategies, pipeline, and cleared cash are not conflated.
