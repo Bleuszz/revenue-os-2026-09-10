@@ -134,3 +134,21 @@
 - Expected result: one living draft covers all seventeen mandated items and clearly marks current unknowns without pretending the mission is complete.
 - Actual result: Created `ops/FINAL_REPORT.md` with every required numbered section, the fixed deadline, current evidence snapshot, authoritative source routing, and explicit distinctions among market-attempted, prepared, rejected, pending, and realised states. Added validator and test coverage proving every heading occurs exactly once and the cleared-cash rule remains present. All twelve tests pass.
 - Decision: Update the draft only when evidence changes. Keep the draft marker until the fixed deadline and complete a requirement-by-requirement external and repository audit before issuing the final report.
+
+## E-015 — Actual sent-message integrity audit
+
+- Hypothesis: Reading the exact sent bodies can detect trust, factual, compliance, or proof-positioning defects before any follow-up reuses them.
+- Cost: £0
+- Time: about 5 minutes
+- Expected result: all ten messages accurately represent the sender, evidence, offer, access model, CTA, proof, and opt-out, or a proportionate correction is identified.
+- Actual result: Read all ten actual Gmail bodies. Each names Nathan truthfully, uses current prospect-specific evidence, states the fixed £99 scope, says no account access is needed, offers a free preview, and includes an opt-out. None has an attachment. The linked Lane GitHub repository is publicly reachable and candid about owner-supplied dependencies, so it is valid technical capability evidence but not client-outcome or social proof. No reply, agreement, delivery, or cash was inferred from SENT status.
+- Decision: No corrective email is warranted. Preserve the more concise later-message structure and describe any future capability link literally; never present Lane as a customer success or performance result.
+
+## E-016 — GitHub live progress automation
+
+- Hypothesis: A generated, fingerprint-bound root snapshot will keep GitHub status readable without allowing a manually maintained progress note to drift from the mission evidence.
+- Cost: £0
+- Time: about 10 minutes
+- Expected result: `progress.txt` exposes the clock, cash, non-cash states, funnel, portfolio, gates, and latest events; any tracked repository change makes validation fail until the snapshot is regenerated.
+- Actual result: Added `tools/update_progress.py`, a tracked pre-commit hook, validator checks, README instructions, and a deterministic test. The hook regenerates and stages `progress.txt`, then runs the full unit suite and mission validator before allowing a commit in this configured checkout.
+- Decision: Treat `progress.txt` as generated output. Refresh it on every material repository change, retain the fingerprint gate, and verify the pushed remote head after each commit.

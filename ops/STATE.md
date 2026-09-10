@@ -1,6 +1,6 @@
 # Mission State
 
-Last updated: 2026-09-10 20:48 Europe/London
+Last updated: 2026-09-10 20:55 Europe/London
 
 ## Objective
 
@@ -29,6 +29,8 @@ Maximise legitimate verified net cash recovery by 2026-09-17 19:09 Europe/London
 - Invoice readiness: an official-source-grounded UK bank-transfer invoice checklist and shell are prepared. Nathan's legal/address/VAT/bank fields remain absent and are requested only after buyer agreement; an issued invoice is pending, not cash.
 - Secondary launch readiness: five tailored £149 landing-page messages now provide a current-page observation and a public-fact hero. They are local and `UNSENT`, cannot be used before 2026-09-11 19:35 Europe/London, and require fresh page, Gmail, corporate-channel, and suppression checks before any send.
 - Final-report readiness: `FINAL_REPORT.md` maps all seventeen required items to current evidence and deadline checks. It remains explicitly a draft; undetermined outcomes, unlaunched strategies, pipeline, and cleared cash are not conflated.
+- Sent-message integrity: all ten actual Gmail bodies were audited. Each uses a truthful sender identity, a fixed £99 scope, no-access fulfilment, a free-preview CTA, and an opt-out. The public Lane link is accessible technical capability evidence only; it is not client-outcome or social proof.
+- GitHub progress visibility: root `progress.txt` is generated from authoritative mission files and a tracked-content fingerprint. The configured pre-commit hook regenerates and stages it, then requires the unit suite and mission validator to pass.
 
 ## Current portfolio
 

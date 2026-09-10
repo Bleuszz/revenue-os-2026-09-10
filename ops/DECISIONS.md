@@ -73,3 +73,10 @@
 - Decision: After a buyer agrees, use a compliant invoice and UK bank transfer before considering an intermediary. Keep every legal, address, VAT, and bank field blank until Nathan supplies and verifies it.
 - Reason: GOV.UK permits ordinary invoicing and record-keeping without requiring a new payment-platform signup, while specifying the fields invoices and sole-trader invoices must contain. This avoids depending on Stripe identity verification or a new PayPal hold.
 - Controls: Confirm the buyer's billing details and any purchase-order route; never infer VAT status; check that the chosen bank account permits business receipts; store the issued invoice and payment evidence outside Git; classify an invoice as pending and cash only after cleared funds are observed.
+
+## D-012 — Keep technical proof distinct from outcome proof
+
+- Date: 2026-09-10
+- Decision: Use the public Lane repository only as evidence that Nathan has built relevant technical tooling. Do not call it client work, social proof, a customer result, or evidence of conversion impact.
+- Reason: The repository is reachable and candid about external dependencies, but the outreach audit found no external customer outcome attached to it. Precise proof positioning protects trust without discarding relevant capability evidence.
+- Control: Any future proof link must be rechecked immediately before use and described according to what it directly demonstrates.

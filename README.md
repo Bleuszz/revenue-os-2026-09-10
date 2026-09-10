@@ -19,6 +19,16 @@ The mission must recover at least £70 net cash while risking no more than £30 
 5. Update `ops/FINANCE.md` only from verifiable payment or expense evidence.
 6. Maintain `ops/FINAL_REPORT.md` as a draft evidence map; remove its draft marker only after the fixed deadline and a full evidence audit.
 
+`progress.txt` is the concise GitHub-visible mission snapshot. Regenerate it
+before every commit with `python tools/update_progress.py`. This checkout uses
+the tracked `.githooks/pre-commit` hook to regenerate and stage it automatically,
+then run the unit suite and mission validator. Enable the hook in another clone
+with:
+
+```powershell
+git config core.hooksPath .githooks
+```
+
 ## Requirements
 
 - Git
@@ -69,6 +79,7 @@ the builder is tracked so a clean template can be reproduced before fulfilment.
 Run verification:
 
 ```powershell
+python tools/update_progress.py
 python -m unittest discover -s tests -v
 python tools/validate_mission.py
 ```

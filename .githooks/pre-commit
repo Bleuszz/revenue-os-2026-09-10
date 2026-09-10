@@ -1,0 +1,7 @@
+#!/bin/sh
+set -eu
+
+python tools/update_progress.py
+git add progress.txt
+python -m unittest discover -s tests -q
+python tools/validate_mission.py

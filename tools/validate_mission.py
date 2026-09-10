@@ -13,6 +13,11 @@ from decimal import Decimal, InvalidOperation
 from pathlib import Path
 from typing import Iterable
 
+try:
+    from .update_progress import compute_repo_fingerprint
+except ImportError:
+    from update_progress import compute_repo_fingerprint
+
 
 REQUIRED_FILES = (
     "ops/STATE.md",
@@ -34,6 +39,9 @@ REQUIRED_FILES = (
     "ops/FINAL_REPORT.md",
     "docs/INVOICE_READINESS.md",
     "tools/build_listing_rescue_workbook.mjs",
+    "tools/update_progress.py",
+    ".githooks/pre-commit",
+    "progress.txt",
 )
 
 LEAD_COLUMNS = (
@@ -278,6 +286,26 @@ def validate_repository(root: Path) -> list[str]:
                 errors.append(f"FINAL_REPORT.md: expected exactly one heading {heading!r}")
         if "Only cleared, accessible cash from an external customer counts" not in text:
             errors.append("FINAL_REPORT.md: realised-cash evidence rule is missing")
+
+    progress = root / "progress.txt"
+    if progress.is_file():
+        text = progress.read_text(encoding="utf-8")
+        expected = compute_repo_fingerprint(root)
+        match = re.search(r"^Repository content fingerprint: ([0-9a-f]{64})$", text, re.MULTILINE)
+        if not match:
+            errors.append("progress.txt: repository fingerprint is missing")
+        elif match.group(1) != expected:
+            errors.append("progress.txt: stale repository fingerprint; run python tools/update_progress.py")
+        for required in (
+            "SEVEN-DAY REVENUE MISSION - LIVE PROGRESS",
+            "REALISED FINANCIAL STATE",
+            "NON-CASH COMMERCIAL STATE",
+            "FUNNEL",
+            "LATEST VERIFIED EVENTS",
+            "Only cleared, accessible external-customer cash counts as realised revenue.",
+        ):
+            if required not in text:
+                errors.append(f"progress.txt: missing required section or rule {required!r}")
 
     return errors
 

@@ -1,8 +1,10 @@
 import csv
 import tempfile
 import unittest
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+from tools.update_progress import build_progress, compute_repo_fingerprint
 from tools.validate_mission import (
     FINAL_REPORT_HEADINGS,
     OPPORTUNITY_COLUMNS,
@@ -51,6 +53,29 @@ class MissionValidationTests(unittest.TestCase):
         self.assertEqual(len(FINAL_REPORT_HEADINGS), 17)
         for heading in FINAL_REPORT_HEADINGS:
             self.assertEqual(text.count(heading), 1, heading)
+
+    def test_progress_snapshot_is_evidence_bound(self):
+        now = datetime(
+            2026,
+            9,
+            10,
+            20,
+            55,
+            tzinfo=timezone(timedelta(hours=1), name="BST"),
+        )
+        text = build_progress(ROOT, now=now)
+        self.assertIn("Generated: 2026-09-10 20:55:00 BST", text)
+        self.assertIn("Time remaining: 6d 22h 14m", text)
+        self.assertIn("Gross cash received: £0.00", text)
+        self.assertIn("Contacted: 10", text)
+        self.assertIn(
+            f"Repository content fingerprint: {compute_repo_fingerprint(ROOT)}",
+            text,
+        )
+        self.assertIn(
+            "Only cleared, accessible external-customer cash counts as realised revenue.",
+            text,
+        )
 
 
 if __name__ == "__main__":
