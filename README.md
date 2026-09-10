@@ -34,15 +34,29 @@ No environment variables are required at present. Secrets must remain outside Gi
 
 - `ops/`: durable commercial state and evidence
 - `docs/`: research and customer-facing working documentation
-- `scripts/`: deterministic utilities added only when they save more time than they cost
+- `tools/`: deterministic fulfilment utilities
+- `templates/`: fictional input/output examples that contain no customer data
+- `tests/`: automated checks for fulfilment utilities
 
 ## Operating procedure
 
 Use manual-first demand tests, contact a small number of highly relevant business prospects, provide concrete value in the first message, fulfil paid work before speculative building, and reallocate effort from observed outcomes.
 
-## Tests
+## Catalogue workflow
 
-No software has been built yet. Any later code must include proportionate automated or reproducible verification.
+Create review-only product drafts from buyer-approved facts:
+
+```powershell
+python tools/catalogue_workflow.py templates/catalogue_input_example.csv work/catalogue_output.csv
+```
+
+The output always requires human factual review and is never automatically published.
+
+Run verification:
+
+```powershell
+python -m unittest discover -s tests -v
+```
 
 ## Deployment
 
@@ -50,7 +64,7 @@ No deployment exists. A website will be created only if it materially improves c
 
 ## Known limitations
 
-- No payment connector is available in the current tool environment.
+- Stripe live payments are unavailable under the standing no-photo-ID constraint. Direct UK bank transfer is the primary post-agreement route; an existing usable PayPal account is conditional fallback only.
 - No sale, payment, customer, testimonial, traffic, or conversion result exists at mission start.
 - Cold outreach must use relevant public business channels, honest identity, low volume, and a clear opt-out.
 
@@ -60,4 +74,4 @@ Do not commit credentials, verification codes, customer-sensitive data, inbox co
 
 ## Current mission status
 
-Day 1. Twenty-seven strategies scored, primary offer live, 12 leads researched and 10 tailored messages sent. The secondary offer package is ready but not yet activated. Verified cash received: £0.00; spend: £0.00; signed work: £0.00. See `ops/DASHBOARD.md` for the current pipeline and next action.
+Day 1. Twenty-eight strategies scored, primary offer live, 17 leads researched and 10 tailored messages sent. The secondary offer and five previews are ready but not activated. A tested £399 catalogue-workflow pilot is the asymmetric expansion. Verified cash received: £0.00; spend: £0.00; signed work: £0.00. See `ops/DASHBOARD.md` for the current pipeline and next action.

@@ -21,8 +21,9 @@
 
 1. Primary: £99 e-commerce listing rescue sprint — live test
 2. Secondary: £149 landing-page conversion patch — offer, five qualified reserves, and five preliminary previews ready; outbound held until trigger
-3. Asymmetric experiment: £59 Lane early-access onboarding — activate on explicit cross-listing pain
+3. Asymmetric experiment: £399 supplier-spec-to-catalogue workflow — offer only on explicit bulk-data/backlog pain
 4. Emergency fallback: sell verified user-owned inventory on eBay — requires inventory/photos
+5. Reserve: £59 Lane early-access onboarding — dependency/credential risk keeps it inactive
 
 ## Funnel
 
@@ -35,7 +36,7 @@
 
 **Current bottleneck:** reply and trust generation. The ID-free payment plan is ready, but direct-transfer details and PayPal usability remain intentionally uncollected until buyer intent exists.
 
-**Most important evidence learned:** 10 current corporate seller catalogues supported specific value-first outreach, but the observation window is still too short to infer demand; Stripe and a fresh PayPal seller setup are unsuitable for the fixed deadline when identity checks or holds can intervene.
+**Most important evidence learned:** 10 current corporate seller catalogues support specific value-first outreach, and live marketplace briefs independently show demand for bulk listing/copy workflows; the observation window is still too short to infer direct-channel conversion.
 
 **Next highest-EV action:** monitor all 10 threads, respond immediately to buyer signals, and keep the five-prospect secondary reserve unsent until the 24-hour trigger.
 

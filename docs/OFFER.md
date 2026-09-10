@@ -17,6 +17,8 @@ UK corporate eBay sellers with dozens or hundreds of active listings and visible
 
 The same deliverable for 40 listings, offered only after the buyer sees the pilot format.
 
+If a buyer has 100+ products and explicit supplier-data or consistency pain, do not force that problem into this small sprint. Qualify the separate £399 supplier-spec-to-catalogue workflow in `CATALOGUE_WORKFLOW_OFFER.md`.
+
 ## Buyer inputs
 
 - 15 public listing URLs or a seller-store URL

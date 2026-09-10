@@ -53,3 +53,12 @@
 - Expected result: any positive reply can receive a specific preview and clear commercial next step in one review cycle.
 - Actual result: Created `docs/PAYMENT_COLLECTION.md` and `docs/BUYER_CLOSE_KIT.md`; direct transfer is primary, existing usable PayPal is conditional, and Stripe is inactive. No bank details, payment account, invoice, or transaction was created.
 - Decision: Keep the kit unsent until a real reply. Adapt every message to the thread and verify cleared funds only in the actual account.
+
+## E-006 — Higher-value catalogue workflow validation
+
+- Hypothesis: Established brands with supplier data and large inconsistent catalogues can support a higher-value, repeatable workflow offer than isolated listing rewrites.
+- Cost: £0
+- Time: about 25 minutes
+- Expected result: current demand evidence plus a working, tested fulfilment scaffold and a bounded direct-sale offer.
+- Actual result: Verified a live $900 fixed-price brief for about 180 Shopify products and dozens of other current marketplace listing/copy projects. Created a £399/25-product pilot, £799 conditional expansion, deterministic CSV validation/draft tool, example input/output, and six automated tests. No marketplace account, application, contact, quote, or pipeline value was created.
+- Decision: Promote the catalogue workflow to the asymmetric slot and move Lane onboarding to reserve. Activate only on explicit large-catalogue pain; do not use an ID-dependent marketplace during this mission.

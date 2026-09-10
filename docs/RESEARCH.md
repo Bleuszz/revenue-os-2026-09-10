@@ -17,6 +17,7 @@ Each opportunity is rated 1–5 on: seven-day cash chance (25%), margin (15%), s
 - Prolific can pay approved balances to PayPal within 24 hours after cash-out, but researcher approval can take up to 22 days and participant eligibility is unknown.
 - UK private eBay selling currently has no transaction fee in most categories. Funds generally become available after delivery, or sooner for eligible established sellers, then may take 0–4 business days to reach a bank. This is viable only if the user owns saleable inventory and can ship immediately.
 - Public eBay evidence shows active UK corporate sellers with large catalogues and concrete listing-quality gaps: inconsistent title syntax, missing searchable specifics, unexplained condition codes, stale storefront copy, or seller-description sections that expose little usable copy.
+- A live Upwork brief checked on 2026-09-10 offers $900 fixed price for a workflow that converts supplier specifications into consistent, reviewed Shopify descriptions across about 180 products. A current Freelancer category page also shows dozens of open product-description and listing projects, including bulk catalogue work. This supports demand for a higher-value catalogue workflow, while the marketplace identity, competition, and payout constraints still make direct selling preferable for this mission.
 - The user's existing public Lane repository is relevant proof of UK eBay/Vinted workflow capability, but it still requires marketplace credentials and a working deployment for live onboarding.
 
 ## Selected portfolio
@@ -39,11 +40,11 @@ Offer: annotated audit plus rewritten hero, CTA, FAQ and implementation patch fo
 
 Activation trigger: primary batch reaches 10 qualified contacts without engagement, or an e-commerce prospect has a clearer website-conversion problem than a listing problem.
 
-### Asymmetric experiment — Lane early-access onboarding
+### Asymmetric experiment — supplier-spec-to-catalogue workflow
 
-Offer: £59 setup and guided pilot for a UK seller who already uses eBay and Vinted. Limit to one customer while dependencies are still being verified.
+Offer: £399 for a source-field audit, approved fact map, deterministic QA workflow, brand structure, and 25 reviewed product drafts; expand to £799 for up to 100 products only after the pilot is accepted.
 
-Activation trigger: a reseller explicitly mentions cross-listing, duplicate stock, or manual delisting pain.
+Activation trigger: a primary prospect or other established brand explicitly mentions inconsistent supplier data, a copy backlog, multiple legacy writers, or a large catalogue migration. The Lane onboarding offer moves to reserve because its dependency and credential burden is higher.
 
 ### Emergency fallback — sell existing user-owned inventory
 
@@ -54,7 +55,7 @@ Target: one or more unused owned items with an aggregate realistic sale value of
 - £99 primary pilot: one sale yields £99 gross; assumed direct bank transfer fee £0; net £99 before tax. Payment method is not yet verified.
 - £179 primary sprint: one sale yields £179 gross; assumed direct bank transfer fee £0.
 - £149 secondary patch: one sale yields £149 gross; assumed direct bank transfer fee £0.
-- £59 Lane onboarding: two sales yield £118 gross.
+- £399 catalogue-workflow pilot: one sale yields £399 gross; a £799 expansion is offered only after input quality and review burden are verified.
 - No amount is counted until cash is verifiably received.
 
 ## Sources
@@ -76,4 +77,5 @@ Target: one or more unused owned items with an aggregate realistic sale value of
 - R-15 UserTesting payment timing: https://support.usertesting.com/hc/en-us/articles/4405125498003
 - R-16 Respondent incentive timing: https://help.respondent.io/en/articles/12552519-getting-paid-on-respondent-timeline-currencies-how-to-redeem
 - R-17 ICO small-organisation marketing detail: https://ico.org.uk/for-organisations/advice-for-small-organisations/direct-marketing-and-data-protection/marketing-and-data-protection-in-detail/
-
+- R-18 Current supplier-data-to-Shopify-copy brief: https://www.upwork.com/freelance-jobs/apply/Product-descriptions-from-supplier-data-Shopify_~022091999775818585444/
+- R-19 Current product-description and listing demand: https://www.freelancer.com/jobs/Product-Descriptions_1/
