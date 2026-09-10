@@ -1,6 +1,6 @@
 # Mission State
 
-Last updated: 2026-09-10 19:45 Europe/London
+Last updated: 2026-09-10 19:49 Europe/London
 
 ## Objective
 
@@ -20,6 +20,7 @@ Maximise legitimate verified net cash recovery by 2026-09-17 19:09 Europe/London
 - Pipeline: £990.00 nominal / £99.00 probability-weighted (provisional)
 - Selected strategy: £99 e-commerce listing rescue sprint
 - Outreach: 10 tailored messages sent; delivery, opens, and replies not yet observed
+- Payment route: direct UK bank transfer after buyer agreement; an existing usable PayPal account is a conditional fallback; Stripe is inactive
 
 ## Current portfolio
 
@@ -46,7 +47,7 @@ Maximise legitimate verified net cash recovery by 2026-09-17 19:09 Europe/London
 - Browser automation: available
 - Codex Sites deployment: available
 - Python 3.12, Node.js, npm: available
-- Payment connector: Stripe browser account is authenticated in sandbox mode, but live payments are not activated
+- Payment collection: direct transfer is operationally available when Nathan supplies details after agreement; PayPal account usability is unverified; Stripe live use is unavailable under the no-ID constraint
 - Starting project repository: none
 
 ## Boundaries
@@ -54,7 +55,8 @@ Maximise legitimate verified net cash recovery by 2026-09-17 19:09 Europe/London
 - Do not spend without a specific expected-value case and a logged expense.
 - Do not contact prospects until the offer, target, sender identity, evidence, and reply/opt-out handling are ready.
 - Do not claim results that have not been observed.
-- Human action is required to complete Stripe's photo-ID and selfie verification before live card payments can be activated. Never handle or record those identity materials.
+- Assume Nathan cannot provide photo ID or a selfie. Do not depend on new or existing services that require identity documents unless completely necessary and Nathan explicitly changes this constraint.
+- Never store bank-account details, PayPal credentials, identity materials, or full payment data in Git. Verify payments only inside the relevant account, not from buyer screenshots or emails.
 - A Stripe test secret appeared in accessibility output during the audit. It was not copied, used, or stored; the user should rotate it in Stripe after setup.
 
 ## Resume instruction

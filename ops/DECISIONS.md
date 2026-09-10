@@ -49,3 +49,13 @@
 - Date: 2026-09-10
 - Decision: Keep direct bank transfer as the assumed zero-fee option and defer Stripe account/login work until a prospect requests card payment or signals intent.
 - Reason: Stripe-hosted Payment Links are a good simple-product route, but no Stripe connector or signed-in browser account is available. Signup/login would add user friction before a payment need exists.
+
+- Status: Superseded by D-009 after the authenticated sandbox revealed a mandatory identity-verification gate.
+
+## D-009 — Use an ID-free payment hierarchy
+
+- Date: 2026-09-10
+- Decision: Use direct UK bank transfer as the primary route after buyer agreement. Use a PayPal commercial invoice only if an existing account is already usable without document verification and funds will be accessible inside the mission window. Treat Stripe as inactive.
+- Reason: Nathan cannot supply photo ID. Stripe live activation is blocked on ID/selfie, while PayPal states that new or inactive seller funds may be held for up to 21 days and identity confirmation can be required. Direct transfer avoids a new intermediary and has the best chance of accessible cash before the deadline.
+- Controls: Never store bank details in Git; verify receipts inside the real account; never accept screenshots as proof; do not use PayPal friends-and-family for a commercial service; record actual fees and holds.
+- Revisit when: A buyer cannot use bank transfer and Nathan confirms an existing PayPal account is currently able to receive and release commercial funds without ID.

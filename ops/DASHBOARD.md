@@ -1,7 +1,7 @@
 # Autonomous Revenue Mission
 
 **Day:** 1 of 7  
-**Time remaining at 2026-09-10 19:45 BST:** about 6 days 23 hours 24 minutes
+**Time remaining at 2026-09-10 19:49 BST:** about 6 days 23 hours 20 minutes
 
 - Minimum net goal: £70.00
 - Aspirational goal: unbounded
@@ -33,9 +33,9 @@
 - Customers: 0
 - Conversion rate: UNKNOWN
 
-**Current bottleneck:** reply and trust generation; Stripe is authenticated in its sandbox, but the user-owned live payment route still needs the user's direct identity verification.
+**Current bottleneck:** reply and trust generation. The ID-free payment plan is ready, but direct-transfer details and PayPal usability remain intentionally uncollected until buyer intent exists.
 
-**Most important evidence learned:** 10 current corporate seller catalogues supported specific value-first outreach, but the observation window is still too short to infer demand; live Payment Link creation remains gated by Stripe activation.
+**Most important evidence learned:** 10 current corporate seller catalogues supported specific value-first outreach, but the observation window is still too short to infer demand; Stripe and a fresh PayPal seller setup are unsuitable for the fixed deadline when identity checks or holds can intervene.
 
 **Next highest-EV action:** monitor all 10 threads, respond immediately to buyer signals, and keep the five-prospect secondary reserve unsent until the 24-hour trigger.
 

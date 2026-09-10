@@ -34,13 +34,13 @@ Scales: value in expected seven-day net cash; probability 0–1; time in operato
    - Compute: Medium
    - Dependencies: adequate observation window
 
-5. When the user completes Stripe photo-ID/selfie verification, verify live-payment readiness and prepare the £99 hosted Payment Link; otherwise retain direct bank transfer as the assumed route.
-   - Value if successful: reduces time-to-cash and prevents false revenue claims
-   - Probability: conditional
+5. On buyer agreement, offer UK bank transfer first and PayPal invoice only if an existing account is already usable without document verification or a hold that extends beyond the deadline.
+   - Value if successful: converts an agreed £99 or £149 service into accessible cash without an ID-dependent signup
+   - Probability: conditional on buyer intent and payment-account evidence
    - Time: 10 minutes
-   - Money: £0 preferred
+   - Money: £0 preferred; record actual PayPal fee if used
    - Compute: Low
-   - Dependencies: user-completed Stripe verification or buyer signal and user-controlled bank details
+   - Dependencies: buyer agreement; Nathan supplies bank details only then, or confirms an existing usable PayPal account
 
 6. If no meaningful response after 20 qualified sends or by day 3, pivot to the £149 landing-page patch and activate the eBay-inventory contingency if the user supplies inventory and photographs.
    - Value if successful: £70–£298+

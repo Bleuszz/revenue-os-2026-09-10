@@ -34,6 +34,7 @@ The same deliverable for 40 listings, offered only after the buyer sees the pilo
 
 1. Provide one concrete public-listing observation in the first message.
 2. Offer a three-listing preview before commitment.
-3. On interest, confirm scope and the user's legitimate payment route.
+3. On interest, confirm scope and ask whether the buyer prefers UK bank transfer or a PayPal commercial invoice. Bank details are supplied only after agreement; PayPal is offered only if an existing account is already usable and timely.
 4. Deliver the three-listing preview, then collect the agreed payment/deposit before the remaining batch unless the buyer requires another reasonable structure.
 
+See `PAYMENT_COLLECTION.md` for verification, privacy, fee, and no-ID controls.

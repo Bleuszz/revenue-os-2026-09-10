@@ -18,8 +18,10 @@ Audited: 2026-09-10 19:15 Europe/London
 | Node.js/npm | AVAILABLE | Installed |
 | Deployment | AVAILABLE | Codex Sites connector; no site created |
 | Vercel CLI | UNAVAILABLE | Not installed; no need identified |
-| Payment connector | PARTIAL | No Stripe MCP tool is callable; an existing Stripe account is accessible through an authorised browser session |
-| Stripe browser session | PARTIAL | Authenticated in sandbox mode; live activation is blocked on a user-only photo-ID and selfie verification step |
+| Payment connector | PARTIAL | No payment MCP tool is callable; payment collection therefore needs a user-controlled browser/account route |
+| Stripe browser session | INACTIVE | Authenticated in sandbox mode, but live activation requires unavailable photo-ID/selfie verification; do not depend on it |
+| PayPal | UNVERIFIED | No account state was inspected or changed; use only an existing account already able to receive and release commercial funds without document verification |
+| Direct UK bank transfer | CONDITIONAL | Preferred after buyer agreement; Nathan supplies details at that point and receipt must be verified in the actual bank account |
 | OpenAI API key | AVAILABLE | Environment variable name present; value not inspected or recorded |
 | Codex usage | AVAILABLE | Weekly bucket 1% used; no paid credits at audit |
 | Available task models | AVAILABLE | Host exposes GPT-6 Astra, GPT-5.6 Sol, GPT-5.6 Terra, GPT-5.6 Luna, GPT-5.5, and GPT-5.3-Codex-Spark with model-specific reasoning levels |
@@ -30,5 +32,6 @@ Audited: 2026-09-10 19:15 Europe/London
 
 - The current session cannot change its own model.
 - External revenue requires a real buyer and a user-owned way to accept payment.
+- Assume no photo ID is available. Do not create or depend on services requiring identity documents unless completely necessary and Nathan explicitly changes the constraint.
 - No new account has been created.
-- No credentials, mailbox content, or tokens are stored in this repository.
+- No credentials, bank details, mailbox content, identity material, or tokens are stored in this repository.

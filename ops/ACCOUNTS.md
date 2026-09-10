@@ -8,4 +8,8 @@ Pre-existing authorised connections in use:
 |---|---|---|---|---:|---|---|
 | Gmail | Legitimate business communication | Not stored | No | £0 mission cost | None identified | None |
 | GitHub | Private source backup | Public username only if required by remote | No | £0 mission cost | None identified | None |
-| Stripe | Potential card-payment collection | Not stored | No | £0 mission cost | None identified | Live use requires user identity verification and account activation |
+| Stripe | Inactive sandbox only | Not stored | No | £0 mission cost | None identified | Do not continue activation under the no-ID constraint; rotate the exposed test key after setup |
+
+PayPal account availability is unknown and was not inspected. Do not open a new PayPal account for this mission. An existing usable account may be considered only after buyer intent, with commercial-payment status, identity requirements, holds, fees, and withdrawal accessibility verified first.
+
+Direct bank transfer requires no mission-created account. Nathan supplies the relevant details only after a buyer agrees scope; those details must never be stored here.
