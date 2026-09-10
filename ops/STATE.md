@@ -1,6 +1,6 @@
 # Mission State
 
-Last updated: 2026-09-10 19:49 Europe/London
+Last updated: 2026-09-10 19:52 Europe/London
 
 ## Objective
 
@@ -21,6 +21,7 @@ Maximise legitimate verified net cash recovery by 2026-09-17 19:09 Europe/London
 - Selected strategy: £99 e-commerce listing rescue sprint
 - Outreach: 10 tailored messages sent; delivery, opens, and replies not yet observed
 - Payment route: direct UK bank transfer after buyer agreement; an existing usable PayPal account is a conditional fallback; Stripe is inactive
+- Buyer conversion readiness: positive-reply, preview, agreement, bank-transfer, PayPal-invoice, and payment-evidence templates are prepared without embedded financial details
 
 ## Current portfolio
 

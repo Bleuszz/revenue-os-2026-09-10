@@ -44,3 +44,12 @@
 - Expected result: complete offer, boundaries, qualification rubric, and reusable sample before a pivot is needed.
 - Actual result: Created `docs/LANDING_PAGE_PATCH.md`, `docs/SECONDARY_QUALIFICATION.md`, and an explicitly illustrative sample with no invented client or performance result.
 - Decision: Five prospects passed the saved rubric on current public evidence. Keep all five in a research-only reserve and hold secondary outreach until the primary 24-hour observation trigger or stronger contrary evidence.
+
+## E-005 — ID-free buyer conversion readiness
+
+- Hypothesis: Preparing the close, scope, payment-choice, and verification language before a reply will reduce response latency without exposing financial details or prematurely creating a payment account.
+- Cost: £0
+- Time: about 10 minutes
+- Expected result: any positive reply can receive a specific preview and clear commercial next step in one review cycle.
+- Actual result: Created `docs/PAYMENT_COLLECTION.md` and `docs/BUYER_CLOSE_KIT.md`; direct transfer is primary, existing usable PayPal is conditional, and Stripe is inactive. No bank details, payment account, invoice, or transaction was created.
+- Decision: Keep the kit unsent until a real reply. Adapt every message to the thread and verify cleared funds only in the actual account.
