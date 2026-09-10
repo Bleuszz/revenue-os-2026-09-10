@@ -67,6 +67,7 @@ class MissionValidationTests(unittest.TestCase):
         self.assertIn("Generated: 2026-09-10 20:55:00 BST", text)
         self.assertIn("Time remaining: 6d 22h 14m", text)
         self.assertIn("Gross cash received: £0.00", text)
+        self.assertIn("Weekly Codex usage consumed: 10%", text)
         self.assertIn("Contacted: 10", text)
         self.assertIn(
             f"Repository content fingerprint: {compute_repo_fingerprint(ROOT)}",

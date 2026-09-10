@@ -44,8 +44,8 @@
 
 **Operational integrity:** 13 automated tests and the read-only mission-state validator pass; ledger totals reconcile to the lead register. The primary offer has a visually verified, formula-guarded 15-row Excel delivery handoff and a claim-safe, one-page proof sheet; all five secondary drafts have enforced timing and safety markers, and the draft final report covers all seventeen required items exactly once. Root `progress.txt` is regenerated and fingerprint-checked before every commit in this checkout.
 
-**Compute status:** healthy
+**Compute status:** 90% of the weekly allowance remains; no paid credits. The allowance resets at 18:56 BST on the deadline day.
 
 **Model:** GPT-6 Astra
 
-**Compute conservation level:** normal/batched
+**Compute conservation level:** ELEVATED after setup; four-hour routine batching, buyer signals take priority, no further speculative builds

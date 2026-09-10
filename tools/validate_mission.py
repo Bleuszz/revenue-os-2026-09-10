@@ -302,6 +302,7 @@ def validate_repository(root: Path) -> list[str]:
             "SEVEN-DAY REVENUE MISSION - LIVE PROGRESS",
             "REALISED FINANCIAL STATE",
             "NON-CASH COMMERCIAL STATE",
+            "COMPUTE CONTROL",
             "FUNNEL",
             "LATEST VERIFIED EVENTS",
             "Only cleared, accessible external-customer cash counts as realised revenue.",

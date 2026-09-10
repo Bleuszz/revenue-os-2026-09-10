@@ -89,6 +89,7 @@ def _time_remaining(now: datetime) -> str:
 def build_progress(root: Path, now: datetime | None = None) -> str:
     now = now or datetime.now(MISSION_TZ)
     finance = (root / "ops/FINANCE.md").read_text(encoding="utf-8")
+    compute = (root / "ops/COMPUTE_BUDGET.md").read_text(encoding="utf-8")
     dashboard = (root / "ops/DASHBOARD.md").read_text(encoding="utf-8")
     state = (root / "ops/STATE.md").read_text(encoding="utf-8")
     mission_log = (root / "ops/MISSION_LOG.md").read_text(encoding="utf-8")
@@ -138,6 +139,13 @@ def build_progress(root: Path, now: datetime | None = None) -> str:
         f"Probability-weighted pipeline: {_line_value(finance, 'Probability-weighted pipeline')}",
         f"Uncontacted secondary reserve: {_line_value(finance, 'Uncontacted secondary reserve')}",
         "Only cleared, accessible external-customer cash counts as realised revenue.",
+        "",
+        "COMPUTE CONTROL",
+        f"Weekly Codex usage consumed: {_line_value(compute, 'Codex weekly usage consumed')}",
+        f"Weekly Codex usage remaining: {_line_value(compute, 'Codex weekly usage remaining')}",
+        f"Allowance reset: {_line_value(compute, 'Allowance reset')}",
+        f"Paid usage credits: {_line_value(compute, 'Paid usage credits')}",
+        f"Conservation level: {_line_value(compute, 'Compute conservation level')}",
         "",
         "FUNNEL",
         f"Opportunities scored: {len(opportunities)}",
