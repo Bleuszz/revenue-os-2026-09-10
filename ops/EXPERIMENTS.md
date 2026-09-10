@@ -71,3 +71,12 @@
 - Expected result: if still appropriate at the 48-hour gate, a revalidated Howleys follow-up earns a meaningful reply within the following 48 hours.
 - Actual result: The same misspelt title appears on Howleys' own store and a live OnBuy offer sold by Howleys with matching EAN/MPN, while both descriptions use the correct spelling. A separate incomplete eBay title remains live and was revised on 2026-09-10. Prepared an evidence-linked QA snapshot, a visually verified one-page PDF, and follow-up text; none was sent. The shared-source explanation remains an inference requiring seller confirmation.
 - Decision: Hold until at least 2026-09-12 19:30 BST. Before any send, inspect the full thread and suppression list and revalidate all pages. Discard the follow-up if there is a reply, opt-out, bounce, correction, or weaker evidence. No quote, agreement, or pipeline value was added.
+
+## E-008 — Marketplace-feed reconciliation follow-up readiness
+
+- Hypothesis: Showing one repeated seller-attributed title issue across multiple marketplace destinations will demonstrate higher operational value than another isolated copy correction.
+- Cost: £0
+- Time: about 15 minutes of current public-page verification and preparation
+- Expected result: if still appropriate at the 48-hour gate, a revalidated Pizzazz follow-up earns a meaningful reply within the following 48 hours.
+- Actual result: Tesco and B&Q pages sold by Pizzazz use `Reachargeable` in the MotionGlo title, B&Q repeats it on a separate FlexiGlo product, and the matching MotionGlo EAN on eBay uses a correctly spelt but different title. Prepared an evidence-linked QA snapshot and follow-up text; neither was sent. The marketplace-feed explanation remains an inference requiring seller confirmation.
+- Decision: Hold until at least 2026-09-12 19:30 BST. Before any send, inspect the full thread and suppression list and revalidate every page. Discard the follow-up if there is a reply, opt-out, bounce, correction, or weaker evidence. No quote, agreement, or pipeline value was added.
