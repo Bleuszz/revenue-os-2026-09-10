@@ -8,4 +8,4 @@ Pre-existing authorised connections in use:
 |---|---|---|---|---:|---|---|
 | Gmail | Legitimate business communication | Not stored | No | £0 mission cost | None identified | None |
 | GitHub | Private source backup | Public username only if required by remote | No | £0 mission cost | None identified | None |
-
+| Stripe | Potential card-payment collection | Not stored | No | £0 mission cost | None identified | Live use requires user identity verification and account activation |

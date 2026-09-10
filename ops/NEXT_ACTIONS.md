@@ -2,23 +2,15 @@
 
 Scales: value in expected seven-day net cash; probability 0–1; time in operator minutes; compute Low/Medium/High.
 
-1. Research seven more UK corporate e-commerce sellers with current, specific listing evidence and public business contact details.
-   - Value if successful: expands nominal pipeline by up to £693
-   - Probability: 0.10 per qualified contact (provisional)
-   - Time: 60 minutes
-   - Money: £0
-   - Compute: Medium
-   - Dependencies: public evidence and compliance screen
-
-2. Monitor the three tracked Gmail threads for replies or bounces.
-   - Value if successful: converts or repairs £297 nominal pipeline
-   - Probability: 0.10 per lead (provisional)
+1. Monitor the 10 tracked Gmail threads for replies, opt-outs, or mission-related bounces; do not infer delivery from Gmail's SENT label.
+   - Value if successful: converts or repairs £990 nominal pipeline
+   - Probability: 0.10 per lead is a provisional planning weight, not observed conversion
    - Time: 5 minutes per checkpoint
    - Money: £0
    - Compute: Low
    - Dependencies: Gmail connection
 
-3. On a positive reply, deliver a free three-listing preview and request explicit agreement for the £99 sprint.
+2. On a positive reply, deliver the saved three-listing preview or a prospect-specific equivalent and request explicit agreement for the £99 sprint.
    - Value if successful: £99 cash per sale
    - Probability: conditional on response
    - Time: 25 minutes
@@ -26,23 +18,31 @@ Scales: value in expected seven-day net cash; probability 0–1; time in operato
    - Compute: Medium
    - Dependencies: prospect reply and listings
 
-4. Send the next small batch only after every prospect has concrete current evidence and no suppression or adverse signal.
-   - Value if successful: £99 per sale
-   - Probability: 0.03–0.10 per send, to be calibrated
-   - Time: 8 minutes per message
+3. Pre-qualify up to five secondary-offer prospects using the saved landing-page rubric, but do not contact them before the primary observation trigger.
+   - Value if successful: creates a ready day-2 or day-3 pipeline worth up to £745 nominal
+   - Probability: 0.05 per qualified contact is an untested planning estimate
+   - Time: 45 minutes
    - Money: £0
-   - Compute: Low
-   - Dependencies: action 1 and compliance screen
+   - Compute: Medium
+   - Dependencies: current public page evidence and no buyer reply requiring immediate fulfilment
 
-5. Confirm a direct, low-delay payment route when a prospect signals buying intent; record fees and settlement evidence.
+4. At the 24-hour checkpoint, inspect response/bounce evidence and either send one evidence-led follow-up later at 48 hours, refine the message/channel, or activate the secondary offer.
+   - Value if successful: protects deliverability and improves conversion learning
+   - Probability: conditional on evidence
+   - Time: 20 minutes
+   - Money: £0
+   - Compute: Medium
+   - Dependencies: adequate observation window
+
+5. When the user completes Stripe photo-ID/selfie verification, verify live-payment readiness and prepare the £99 hosted Payment Link; otherwise retain direct bank transfer as the assumed route.
    - Value if successful: reduces time-to-cash and prevents false revenue claims
    - Probability: conditional
    - Time: 10 minutes
    - Money: £0 preferred
    - Compute: Low
-   - Dependencies: buyer signal and user-controlled payment details
+   - Dependencies: user-completed Stripe verification or buyer signal and user-controlled bank details
 
-6. If no meaningful response after 20 qualified sends, pivot to the £149 landing-page patch and activate the eBay-inventory contingency if the user supplies inventory and photographs.
+6. If no meaningful response after 20 qualified sends or by day 3, pivot to the £149 landing-page patch and activate the eBay-inventory contingency if the user supplies inventory and photographs.
    - Value if successful: £70–£298+
    - Probability: to be measured
    - Time: 60 minutes

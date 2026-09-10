@@ -60,4 +60,4 @@ Do not commit credentials, verification codes, customer-sensitive data, inbox co
 
 ## Current mission status
 
-Day 1. Twenty-seven strategies scored, primary offer live, 12 leads researched and seven tailored messages sent. Verified cash received: £0.00; spend: £0.00; signed work: £0.00. See `ops/DASHBOARD.md` for the current pipeline and next action.
+Day 1. Twenty-seven strategies scored, primary offer live, 12 leads researched and 10 tailored messages sent. The secondary offer package is ready but not yet activated. Verified cash received: £0.00; spend: £0.00; signed work: £0.00. See `ops/DASHBOARD.md` for the current pipeline and next action.

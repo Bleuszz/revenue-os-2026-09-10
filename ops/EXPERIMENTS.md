@@ -26,3 +26,21 @@
 - Expected result: at least one meaningful reply by 2026-09-12 19:30 BST.
 - Actual result: Four Gmail messages successfully sent at 2026-09-10 19:30 BST. Gmail labelled them SENT; delivery, opens and replies are UNKNOWN. The 19:28 check found no replies or mission-related bounces from E-001.
 - Decision: Monitor all seven threads. Prepare stronger samples for three researched leads, but do not exceed 10 primary-offer sends without evaluating engagement.
+
+## E-003 — Complete the 10-send calibration set
+
+- Hypothesis: Adding three qualified prospects with stronger, saved preview material improves the chance of at least one meaningful response while keeping outreach specific and low-volume.
+- Cost: £0
+- Time: about 20 minutes of preview preparation and sending
+- Expected result: at least one meaningful reply across the full 10-send set after an adequate 24–48 hour observation window.
+- Actual result: Three Gmail messages successfully sent at 2026-09-10 19:35 BST. Gmail labelled them SENT. Delivery, opens and replies are UNKNOWN; the most recent reply check found none.
+- Decision: The 10-send volume trigger has been reached but not the time trigger. Pause additional primary outreach, monitor bounces/replies, and evaluate the channel/message after 24 hours rather than treating minutes of silence as a failed test.
+
+## E-004 — Secondary-offer readiness
+
+- Hypothesis: A narrowly scoped £149 landing-page patch can be made launch-ready without spending cash or diluting the live primary experiment.
+- Cost: £0
+- Time: about 20 minutes
+- Expected result: complete offer, boundaries, qualification rubric, and reusable sample before a pivot is needed.
+- Actual result: Created `docs/LANDING_PAGE_PATCH.md`, `docs/SECONDARY_QUALIFICATION.md`, and an explicitly illustrative sample with no invented client or performance result.
+- Decision: Pre-qualify at most five prospects, but hold secondary outreach until the primary 24-hour observation trigger or stronger contrary evidence.

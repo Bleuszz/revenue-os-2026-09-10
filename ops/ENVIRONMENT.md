@@ -18,7 +18,8 @@ Audited: 2026-09-10 19:15 Europe/London
 | Node.js/npm | AVAILABLE | Installed |
 | Deployment | AVAILABLE | Codex Sites connector; no site created |
 | Vercel CLI | UNAVAILABLE | Not installed; no need identified |
-| Payment connector | UNAVAILABLE | No Stripe, PayPal, or generic payment tool exposed |
+| Payment connector | PARTIAL | No Stripe MCP tool is callable; an existing Stripe account is accessible through an authorised browser session |
+| Stripe browser session | PARTIAL | Authenticated in sandbox mode; live activation is blocked on a user-only photo-ID and selfie verification step |
 | OpenAI API key | AVAILABLE | Environment variable name present; value not inspected or recorded |
 | Codex usage | AVAILABLE | Weekly bucket 1% used; no paid credits at audit |
 | Available task models | AVAILABLE | Host exposes GPT-6 Astra, GPT-5.6 Sol, GPT-5.6 Terra, GPT-5.6 Luna, GPT-5.5, and GPT-5.3-Codex-Spark with model-specific reasoning levels |

@@ -1,15 +1,15 @@
 # Compute Budget
 
-Last updated: 2026-09-10 19:15 Europe/London
+Last updated: 2026-09-10 19:35 Europe/London
 
 ## Current status
 
 - Current model: GPT-6 Astra (host-reported current session)
 - Current reasoning level: developer-configured; not changed by mission files
-- Codex weekly usage consumed at audit: 1%
+- Codex weekly usage consumed at latest check: 3%
 - Paid usage credits: none
 - GPT-5.3-Codex-Spark five-hour usage consumed at audit: 0%
-- Compute conservation level: NORMAL, with batched research
+- Compute conservation level: NORMAL, with batched research and deterministic state updates
 
 ## Routing policy
 
@@ -27,8 +27,7 @@ Last updated: 2026-09-10 19:15 Europe/London
 
 ## Remaining workload estimate
 
-- Day 1: opportunity scoring, offer/sample, first contact
+- Day 1: opportunity scoring, offer/sample, 10-contact calibration set complete
 - Days 2–3: outreach, replies, adjustment, first fulfilment
 - Days 4–5: fulfil and scale proven path
 - Days 6–7: warm-pipeline and cash-collection focus
-
