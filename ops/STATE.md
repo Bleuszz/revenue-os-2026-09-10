@@ -1,6 +1,6 @@
 # Mission State
 
-Last updated: 2026-09-10 20:38 Europe/London
+Last updated: 2026-09-10 20:41 Europe/London
 
 ## Objective
 
@@ -26,6 +26,7 @@ Maximise legitimate verified net cash recovery by 2026-09-17 19:09 Europe/London
 - Sample QA: all ten primary preview files were audited and three inference/preservation defects were corrected. Storefront identity and third-party pages are not authoritative product sources, ambiguous source text stays unresolved, and narrow corrections preserve unaffected wording. The VWS sent example was explicitly conditional; future versions use a visible placeholder.
 - State validation: `python tools/validate_mission.py` reconciles the lead register to the finance ledger and checks required files, schemas, IDs, opportunity coverage, guarded follow-ups, and saved-preview factual controls before a commit.
 - Fulfilment readiness: a visually verified 15-row Excel handoff for the £99 primary offer is generated from `tools/build_listing_rescue_workbook.mjs`. It tracks source facts, proposed copy, QA questions, fact review, buyer approval, and dynamic publish-readiness without containing prospect data.
+- Invoice readiness: an official-source-grounded UK bank-transfer invoice checklist and shell are prepared. Nathan's legal/address/VAT/bank fields remain absent and are requested only after buyer agreement; an issued invoice is pending, not cash.
 
 ## Current portfolio
 
@@ -63,6 +64,7 @@ Maximise legitimate verified net cash recovery by 2026-09-17 19:09 Europe/London
 - Do not claim results that have not been observed.
 - Assume Nathan cannot provide photo ID or a selfie. Do not depend on new or existing services that require identity documents unless completely necessary and Nathan explicitly changes this constraint.
 - Never store bank-account details, PayPal credentials, identity materials, or full payment data in Git. Verify payments only inside the relevant account, not from buyer screenshots or emails.
+- Before using a personal account for business receipts, Nathan must check its terms with the bank. Never infer VAT status or issue an invoice with invented legal, address, tax, or buyer information.
 - A Stripe test secret appeared in accessibility output during the audit. It was not copied, used, or stored; the user should rotate it in Stripe after setup.
 
 ## Resume instruction

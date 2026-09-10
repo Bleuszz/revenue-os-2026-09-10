@@ -31,6 +31,7 @@ REQUIRED_FILES = (
     "ops/DASHBOARD.md",
     "ops/OPPORTUNITIES.csv",
     "ops/SUPPRESSION.csv",
+    "docs/INVOICE_READINESS.md",
     "tools/build_listing_rescue_workbook.mjs",
 )
 

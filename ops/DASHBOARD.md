@@ -1,7 +1,7 @@
 # Autonomous Revenue Mission
 
 **Day:** 1 of 7  
-**Time remaining at 2026-09-10 20:38 BST:** about 6 days 22 hours 31 minutes
+**Time remaining at 2026-09-10 20:41 BST:** about 6 days 22 hours 28 minutes
 
 - Minimum net goal: £70.00
 - Aspirational goal: unbounded
@@ -34,7 +34,7 @@
 - Customers: 0
 - Conversion rate: UNKNOWN
 
-**Current bottleneck:** reply and trust generation. The ID-free payment plan is ready, but direct-transfer details and PayPal usability remain intentionally uncollected until buyer intent exists.
+**Current bottleneck:** reply and trust generation. The ID-free payment and invoice paths are ready, but Nathan's legal/address/VAT/bank fields and PayPal usability remain intentionally uncollected until buyer intent exists.
 
 **Most important evidence learned:** 10 current corporate seller catalogues support specific value-first outreach; Howleys has a title issue visible on two channels with matching identifiers, while Pizzazz has a repeated title issue across Tesco and B&Q listings attributed to Pizzazz as seller. Live marketplace briefs independently show demand for bulk listing/copy workflows. The observation window is still too short to infer direct-channel conversion.
 

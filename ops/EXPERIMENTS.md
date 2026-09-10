@@ -107,3 +107,12 @@
 - Expected result: a clean fifteen-row handoff that exposes missing drafts, unresolved product facts, requested buyer changes, and final approvals before any copy is published.
 - Actual result: Built and visually inspected a one-sheet Excel handoff with buyer/date inputs, fifteen listing rows, fact-review and approval dropdowns, dynamic row and overall statuses, frozen navigation, and conditional warnings. Exercised the state transitions from missing draft to buyer confirmation required to approved, restored the blank template, exported it, reopened the saved file, and found no formula errors. It contains no customer or prospect data.
 - Decision: Use the generated workbook for any paid primary-order fulfilment. Keep buyer data outside Git, treat approval as a publishing gate rather than performance evidence, and regenerate a clean template for each order.
+
+## E-012 — No-ID UK invoice readiness
+
+- Hypothesis: A source-complete invoice process can support bank-transfer collection without an ID-dependent payment-service signup while preserving legal and accounting distinctions.
+- Cost: £0
+- Time: about 10 minutes
+- Expected result: a positive buyer can receive an accurate invoice promptly, with no personal or financial details stored in Git and no invoice misclassified as cash.
+- Actual result: Verified current GOV.UK invoice fields, sole-trader additions, trading-allowance record duties, and self-employed evidence requirements, plus Small Business Commissioner payment-delay guidance. Created a gated invoice shell that leaves Nathan's legal name, address, VAT status, bank suitability, and bank details for user verification only after agreement. No invoice, account, payment request, or transaction was created.
+- Decision: Keep bank transfer primary. Use the shell only after written buyer agreement; have Nathan verify all user-only fields; retain issued documents outside Git; record cash only from cleared account evidence.

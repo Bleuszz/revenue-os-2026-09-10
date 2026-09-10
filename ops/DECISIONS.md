@@ -66,3 +66,10 @@
 - Decision: Never infer a product's brand, model, specification, colour, size, or compatibility from the seller's storefront name or from a third-party retailer. Use the seller's own item specifics or buyer-approved source data; otherwise keep a visible confirmation placeholder.
 - Reason: A quality audit found that the local Voodoo Vixen sample had inserted the storefront brand into a product title even though third-party records attribute that product name to Jawbreaker. The sent email described only the observed duplication and contained no proposed brand or rewritten title, so the unsupported inference did not reach the prospect.
 - Control: Treat third-party product pages as leads for verification, not authoritative replacement data. Preserve every unaffected source term when making a narrow correction, and use visible placeholders for ambiguous text. Keep the Voodoo follow-up unprepared until the exact seller listing or a buyer-approved source confirms the brand.
+
+## D-011 — Issue source-complete invoices without an ID-dependent service
+
+- Date: 2026-09-10
+- Decision: After a buyer agrees, use a compliant invoice and UK bank transfer before considering an intermediary. Keep every legal, address, VAT, and bank field blank until Nathan supplies and verifies it.
+- Reason: GOV.UK permits ordinary invoicing and record-keeping without requiring a new payment-platform signup, while specifying the fields invoices and sole-trader invoices must contain. This avoids depending on Stripe identity verification or a new PayPal hold.
+- Controls: Confirm the buyer's billing details and any purchase-order route; never infer VAT status; check that the chosen bank account permits business receipts; store the issued invoice and payment evidence outside Git; classify an invoice as pending and cash only after cleared funds are observed.

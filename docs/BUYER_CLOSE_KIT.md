@@ -43,6 +43,10 @@ Before requesting payment, ensure the thread contains all of the following:
 - Exclusions: no marketplace access, publishing, performance guarantee, invented facts, or regulated advice.
 - Approval: buyer reviews all copy before publishing.
 
+Before issuing a bank-transfer invoice, use `INVOICE_READINESS.md` and have
+Nathan confirm the legal name, address, VAT status, bank-account suitability,
+and payment details. Those fields remain intentionally absent from this kit.
+
 After agreement, generate a clean `outputs/listing-rescue-delivery-template.xlsx`
 with `node tools/build_listing_rescue_workbook.mjs`. Enter the buyer name and
 dates only in the generated workbook, never in reusable examples. Populate each

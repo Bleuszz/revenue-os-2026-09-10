@@ -16,7 +16,7 @@ Scales: value in expected seven-day net cash; probability 0–1; time in operato
    - Time: 25 minutes
    - Money: £0
    - Compute: Medium
-   - Dependencies: prospect reply and listings; use `docs/BUYER_CLOSE_KIT.md`, generate the clean workbook with `tools/build_listing_rescue_workbook.mjs`, and adapt the response to the actual thread
+   - Dependencies: prospect reply and listings; use `docs/BUYER_CLOSE_KIT.md`, generate the clean workbook with `tools/build_listing_rescue_workbook.mjs`, and adapt the response to the actual thread. If the buyer agrees, use `docs/INVOICE_READINESS.md` before requesting bank payment.
 
 3. Hold the five qualified secondary-offer prospects without contact until the primary observation trigger; recheck page evidence and refresh the saved preliminary preview immediately before any eventual send.
    - Value if successful: preserves a ready day-2 or day-3 reserve worth up to £745 nominal without misclassifying it as pipeline

@@ -12,16 +12,18 @@ Use this first when a buyer agrees the scope.
 
 1. Confirm the legal buyer name, service, price, delivery deadline, and revision terms in writing.
 2. Ask whether the buyer can pay by UK bank transfer.
-3. Nathan provides the account-holder name, sort code, account number, and a unique payment reference directly at that point. Do not store those details in this repository or reusable prospect notes.
-4. Tell the buyer that work beyond the promised free preview begins when cleared funds are visible.
-5. Verify receipt inside Nathan's actual bank account. An email, message, PDF, or screenshot saying `paid` is not payment evidence.
-6. Record gross cash, any observed bank charge, cleared/accessibility status, and net cash in `ops/FINANCE.md`.
+3. Complete the legal, VAT, buyer, and bank fields in `INVOICE_READINESS.md`; Nathan verifies every user-only field before the invoice is issued.
+4. Nathan provides the account-holder name, sort code, account number, and a unique payment reference directly at that point. Do not store those details in this repository or reusable prospect notes.
+5. Tell the buyer that work beyond the promised free preview begins when cleared funds are visible.
+6. Verify receipt inside Nathan's actual bank account. An email, message, PDF, or screenshot saying `paid` is not payment evidence.
+7. Record gross cash, any observed bank charge, cleared/accessibility status, and net cash in `ops/FINANCE.md`.
 
 Expected platform fee: £0, subject to Nathan's own bank terms. Faster Payments operates continuously, but actual arrival and accessibility must be observed rather than assumed.
 
 Security controls:
 
 - Prefer a business account if Nathan already has one; do not open a new bank account for this mission.
+- If using a personal account, Nathan must first check that its terms allow business receipts; GOV.UK notes that either may be possible and directs users to check with their bank.
 - Give the account-holder name exactly as held by the bank so the buyer can use Confirmation of Payee where available.
 - Never announce changed bank details in an existing email thread without a second verification channel.
 - Never request the buyer's online-banking credentials, card number, PIN, password, or one-time code.
