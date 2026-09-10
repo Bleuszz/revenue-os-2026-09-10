@@ -42,7 +42,7 @@
 - Cost: £0
 - Time: about 20 minutes
 - Expected result: complete offer, boundaries, qualification rubric, and reusable sample before a pivot is needed.
-- Actual result: Created `docs/LANDING_PAGE_PATCH.md`, `docs/SECONDARY_QUALIFICATION.md`, and an explicitly illustrative sample with no invented client or performance result.
+- Actual result: Created `docs/LANDING_PAGE_PATCH.md`, `docs/SECONDARY_QUALIFICATION.md`, an explicitly illustrative sample, and five preliminary page-specific previews with assumptions and client-approval gates; no invented client or performance result.
 - Decision: Five prospects passed the saved rubric on current public evidence. Keep all five in a research-only reserve and hold secondary outreach until the primary 24-hour observation trigger or stronger contrary evidence.
 
 ## E-005 — ID-free buyer conversion readiness

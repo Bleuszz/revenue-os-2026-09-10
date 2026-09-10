@@ -20,7 +20,7 @@
 ## Active strategies
 
 1. Primary: £99 e-commerce listing rescue sprint — live test
-2. Secondary: £149 landing-page conversion patch — offer/sample ready; outbound held until trigger
+2. Secondary: £149 landing-page conversion patch — offer, five qualified reserves, and five preliminary previews ready; outbound held until trigger
 3. Asymmetric experiment: £59 Lane early-access onboarding — activate on explicit cross-listing pain
 4. Emergency fallback: sell verified user-owned inventory on eBay — requires inventory/photos
 

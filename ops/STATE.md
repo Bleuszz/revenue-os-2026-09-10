@@ -1,6 +1,6 @@
 # Mission State
 
-Last updated: 2026-09-10 19:52 Europe/London
+Last updated: 2026-09-10 19:54 Europe/London
 
 ## Objective
 
@@ -26,7 +26,7 @@ Maximise legitimate verified net cash recovery by 2026-09-17 19:09 Europe/London
 ## Current portfolio
 
 - Primary: £99 e-commerce listing rescue — 15 titles, description improvements, and catalogue QA flags within 24 hours.
-- Secondary: £149 landing-page conversion patch; offer, qualification rubric, honest illustrative sample, and five qualified reserve prospects are ready, with outbound held until the activation trigger.
+- Secondary: £149 landing-page conversion patch; offer, qualification rubric, five qualified reserve prospects, and five preliminary page-specific previews are ready, with outbound held until the activation trigger.
 - Asymmetric: £59 Lane early-access onboarding when a prospect has explicit cross-listing pain.
 - Emergency: sell user-owned existing inventory on eBay if inventory and photographs are supplied.
 

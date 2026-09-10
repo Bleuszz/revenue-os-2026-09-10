@@ -18,10 +18,10 @@ Scales: value in expected seven-day net cash; probability 0–1; time in operato
    - Compute: Medium
    - Dependencies: prospect reply and listings; use `docs/BUYER_CLOSE_KIT.md` and adapt it to the actual thread
 
-3. Hold the five qualified secondary-offer prospects without contact until the primary observation trigger; recheck page evidence and prepare one rewritten hero immediately before any eventual send.
+3. Hold the five qualified secondary-offer prospects without contact until the primary observation trigger; recheck page evidence and refresh the saved preliminary preview immediately before any eventual send.
    - Value if successful: preserves a ready day-2 or day-3 reserve worth up to £745 nominal without misclassifying it as pipeline
    - Probability: 0.05 per eventual qualified contact is an untested planning estimate
-   - Time: 10 minutes at activation
+   - Time: 5–10 minutes per activated prospect
    - Money: £0
    - Compute: Medium
    - Dependencies: 24-hour primary checkpoint or stronger contrary evidence; no buyer reply requiring immediate fulfilment
