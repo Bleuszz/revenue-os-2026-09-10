@@ -89,3 +89,12 @@
 - Expected result: no unsupported product fact remains in a sample that could later be sent to a prospect.
 - Actual result: Audited all ten primary preview files. Corrected three saved-sample defects: the Voodoo Vixen sample had inferred a product brand from the storefront; the Vintage Wholesale Store sample had expanded an ambiguous `ME` fragment to `Men's`; and the Simply Toys sample had unnecessarily dropped `Ultimate` while correcting a different typo. Each saved sample now preserves the source or uses a visible confirmation placeholder. Direct inspection confirmed the Voodoo and Simply Toys emails contained no rewritten title; the VWS email did contain the `Men's` example but explicitly prefaced it with `after confirming that Men's is correct`, so it was conditional rather than asserted as fact.
 - Decision: Do not prepare a Voodoo follow-up from third-party brand evidence alone. No corrective VWS email is warranted because its example was explicitly conditional; any future VWS material must use the saved confirmation placeholder. Require seller item specifics or buyer-approved data before inserting a brand or other product fact, preserve unaffected source wording when correcting a narrow defect, and apply these controls to every future preview.
+
+## E-010 — Deterministic mission-state validation
+
+- Hypothesis: A read-only repository check can prevent accounting, evidence, and outreach-safety regressions while the mission is operated across recurring continuations.
+- Cost: £0
+- Time: about 15 minutes
+- Expected result: one command detects missing command-centre files, schema/ID errors, misclassified value, opportunity-role drift, unsafe follow-up drafts, and reintroduced preview assumptions before commit.
+- Actual result: Added `tools/validate_mission.py` and three focused tests. All ten repository tests pass. The validator passes against 28 opportunities, 17 leads, 10 contacts, and 10 primary previews; it also reconciles £0 cash, £990 nominal pipeline, £99 weighted pipeline, and £745 uncontacted secondary reserve to `ops/LEADS.csv`.
+- Decision: Run the unit suite and mission validator before every material state commit. The check is a safety net, not evidence of delivery, engagement, agreement, or revenue.

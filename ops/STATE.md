@@ -1,6 +1,6 @@
 # Mission State
 
-Last updated: 2026-09-10 20:24 Europe/London
+Last updated: 2026-09-10 20:30 Europe/London
 
 ## Objective
 
@@ -24,6 +24,7 @@ Maximise legitimate verified net cash recovery by 2026-09-17 19:09 Europe/London
 - Buyer conversion readiness: positive-reply, preview, agreement, bank-transfer, PayPal-invoice, and payment-evidence templates are prepared without embedded financial details
 - Follow-up readiness: evidence-linked Howleys and Pizzazz cross-channel QA snapshots and messages are saved locally; the Howleys snapshot also has a visually verified one-page PDF. All remain unsent until revalidation at the 48-hour gate.
 - Sample QA: all ten primary preview files were audited and three inference/preservation defects were corrected. Storefront identity and third-party pages are not authoritative product sources, ambiguous source text stays unresolved, and narrow corrections preserve unaffected wording. The VWS sent example was explicitly conditional; future versions use a visible placeholder.
+- State validation: `python tools/validate_mission.py` reconciles the lead register to the finance ledger and checks required files, schemas, IDs, opportunity coverage, guarded follow-ups, and saved-preview factual controls before a commit.
 
 ## Current portfolio
 

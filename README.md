@@ -56,7 +56,12 @@ Run verification:
 
 ```powershell
 python -m unittest discover -s tests -v
+python tools/validate_mission.py
 ```
+
+The mission validator is read-only. It checks the required command-centre files,
+CSV schemas and IDs, accounting reconciliation, selected strategy roles,
+follow-up timing safeguards, and primary-preview factual controls.
 
 ## Deployment
 
